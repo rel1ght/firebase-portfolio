@@ -1,0 +1,33 @@
+{
+  "name": "firebase-portfolio",
+  "private": true,
+  "description": "Personal Portfolio",
+  "version": "0.1.0",
+  "author": "Tyler Manion",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^2.19.45",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rel1ght/firebase-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rel1ght/firebase-portfolio/issues"
+  },
+  "homepage": "https://github.com/rel1ght/firebase-portfolio#readme"
+}
