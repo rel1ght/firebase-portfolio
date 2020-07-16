@@ -1,12 +1,14 @@
 import React from "react"
-import { nav, Navbar, button } from "react-bootstrap"
+import Scrollspy from "react-scrollspy"
+// import { nav, Navbar, button } from "react-bootstrap"
 import { Link } from "gatsby"
+
 export default props => (
   <nav
     className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
     id="sideNav"
   >
-    <Link className="navbar-brand js-scroll-trigger" href="#page-top">
+    <Link to="/#about" className="navbar-brand js-scroll-trigger">
       <span className="d-block d-lg-none">Tyler Manion</span>
       <span className="d-none d-lg-block">
         <img
@@ -28,38 +30,55 @@ export default props => (
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav">
+      <Scrollspy
+        items={[
+          "about",
+          "work",
+          "experience",
+          "education",
+          "skills",
+          "interests",
+          "awards",
+        ]}
+        currentClassName="is-current"
+        className="navbar-nav"
+      >
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" href="#about">
+          <Link className="nav-link js-scroll-trigger" to="/#about">
             About
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" href="#experience">
+          <Link className="nav-link js-scroll-trigger" to="/#work">
+            Work
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link js-scroll-trigger" to="/#experience">
             Experience
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" href="#education">
+          <Link className="nav-link js-scroll-trigger" to="/#education">
             Education
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" href="#skills">
+          <Link className="nav-link js-scroll-trigger" to="/#skills">
             Skills
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" href="#interests">
+          <Link className="nav-link js-scroll-trigger" to="/#interests">
             Interests
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" href="#awards">
+          <Link className="nav-link js-scroll-trigger" to="/#awards">
             Awards
           </Link>
         </li>
-      </ul>
+      </Scrollspy>
     </div>
   </nav>
 )

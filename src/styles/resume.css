@@ -1,11 +1,11 @@
-/*!
- * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
+/* * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
  * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
- */
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE) */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
   color: #868e96;
 }
@@ -23,16 +23,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rambla', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Rambla", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  
+
   color: #7d8491;
 }
 
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
-  
 }
 
 h2 {
@@ -51,7 +52,9 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Rambla', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Rambla", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
 }
 
@@ -73,7 +76,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #bd5d38;
 }
 
 .dev-icons {
@@ -81,7 +84,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #bd5d38;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -177,18 +180,18 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #282a36!important;
+  background-color: #282a36 !important;
 }
 
 .flex-bg-primary {
-  background-color: #181823!important;
+  background-color: #181823 !important;
 }
 
 .text-primary {
   color: #acb0b9 !important;
 }
 .orange {
-  color: #BD5D38;
+  color: #bd5d38;
 }
 .gray {
   color: #7d8491 !important;
@@ -200,13 +203,15 @@ section.resume-section .resume-item .resume-date {
   color: #58682d;
 }
 #hi {
-  line-height:2.5rem !important;
+  line-height: 2.5rem !important;
 }
 a {
   color: #41769b;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   color: #5e9dca;
   text-decoration: none;
 }
@@ -223,16 +228,16 @@ hr.seperator {
 }
 
 #particles-js {
-  z-index: 0; 
-  position: absolute; 
-  opacity: .8; 
-  left: 0px; 
-  top: 0px; 
+  z-index: 0;
+  position: absolute;
+  opacity: 0.8;
+  left: 0px;
+  top: 0px;
 }
 
 #aboutbody {
-  z-index: 1; 
-  pointer-events: inherit; 
+  z-index: 1;
+  pointer-events: inherit;
   position: relative;
 }
 
@@ -240,10 +245,76 @@ hr.seperator {
   margin-top: 190px;
 }
 
-#extraspace{
+#extraspace {
   height: 300px;
 }
 
 #mobileonlyextraspace {
   height: 115px;
+}
+
+.is-current > * {
+  color: white !important;
+}
+
+.iconHover:hover {
+  color: #bd5d38;
+}
+
+.workContent {
+  height: 0;
+}
+.workThumbnail {
+  max-width: 9rem;
+  margin: 0.4rem;
+  box-shadow: 0 5px 5px 1px black;
+  cursor: pointer;
+  filter: grayscale(50%) brightness(80%);
+}
+.workThumbnail:hover {
+  filter: none;
+  transform: translateY(0.2rem);
+}
+.workArrow {
+  height: 100%;
+  margin-bottom: -0.4rem;
+}
+
+#expandedArrow {
+  height: 100%;
+}
+#expandedContent {
+  height: 100%;
+}
+.interiorExpandedContent {
+  background-color: #282a36;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.noHeight {
+  max-height: 0px;
+}
+.yesHeight {
+  max-height: 9999999px;
+}
+.workContentRow {
+  overflow: hidden;
+}
+
+.activeThumbnail {
+  box-sizing: content-box;
+  border: #bd5d38 0.2rem solid;
+  border-radius: 0.2rem;
+  filter: none;
+  transform: translateY(0.2rem);
+}
+.activeThumbnail:hover {
+  filter: grayscale(10%) brightness(90%);
+}
+
+.awssld__content > img {
+  border: 0;
+  border-radius: 0.2rem;
 }
