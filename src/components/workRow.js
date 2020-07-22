@@ -2,7 +2,9 @@ import React, { useState } from "react"
 import WorkThumb from "./workThumb"
 import WorkContent from "./workContent"
 import FenceContent from "./fenceContent"
-import KeenContent from "./keenContent"
+import YourOmahaContent from "./yourOmahaContent"
+import DeepictContent from "./deepictContent"
+import MsgContent from "./msgContent"
 import WorkContext from "./context"
 function WorkRow() {
   function test(test2) {
@@ -43,37 +45,45 @@ function WorkRow() {
     thumbnailClick,
     contentExpanded,
     activeThumbnail,
+    setActiveThumbnail,
+    setContentExpanded,
   }
   return (
     <>
       <WorkContext.Provider value={{ contextValues }}>
-        <div className="row justify-content-around w-100">
+        <div className="row justify-content-around">
           <div className="col-3">
             <WorkThumb
-              src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/gerbil-1"
-              title="test1"
-              content={<FenceContent />}
+              src="./img/mountainskygoldensthumbnail.png"
+              title="Mountain Sky Goldens"
+              content={<MsgContent />}
             />
           </div>
           <div className="col-3 ">
             <WorkThumb
-              src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/gerbil-1"
-              title="test2"
-              content={<KeenContent />}
+              src="./img/fencethumbnail.png"
+              title="Fence"
+              content={<FenceContent />}
             />
           </div>
           <div className="col-3">
-            <WorkThumb src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/gerbil-1" />
+            <WorkThumb
+              src="./img/deepictthumbnail.png"
+              title="Deepict"
+              content={<DeepictContent />}
+            />
           </div>
           <div className="col-3">
-            <WorkThumb src="https://assets.petco.com/petco/image/upload/f_auto,q_auto/gerbil-1" />
+            <WorkThumb
+              src="./img/youromahathumbnail.jpg"
+              title="Your Omaha"
+              content={<YourOmahaContent />}
+            />
           </div>
         </div>
 
         <div
-          className={`workContentRow row w-100 ${
-            contentExpanded ? "" : "d-none"
-          }`}
+          className={`workContentRow row ${contentExpanded ? "" : "d-none"}`}
         >
           <WorkContent content={currentContent} />
         </div>

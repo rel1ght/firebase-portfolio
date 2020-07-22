@@ -8,19 +8,21 @@ function WorkThumb({ src, title, content }) {
   const ref = React.useRef(null)
   return (
     <>
-      <div className="row justify-content-center ">
+      <div className="row justify-content-center maxWidth mx-auto">
         <img
           src={src}
           ref={ref}
           onClick={e => thumbnailClick(e, ref, content)}
-          className={`workThumbnail rounded img-fluid ${
+          className={`workThumbnail rounded img-fluid mb-2 ${
             ref.current === activeThumbnail ? "activeThumbnail" : ""
           }`}
         ></img>
       </div>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center d-none d-md-block">
         <h4
-          className={`${ref.current === activeThumbnail ? "orange" : "blue"}`}
+          className={`text-center ${
+            ref.current === activeThumbnail ? "orange" : "blue"
+          }`}
         >
           {title}
         </h4>

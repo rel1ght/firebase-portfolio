@@ -186,16 +186,21 @@ class About extends React.Component {
             <div className="social-icons">
               <a
                 className="pauto"
+                target="_blank"
                 href="https://www.linkedin.com/in/tyler-manion-98690513a/"
               >
                 <FaLinkedinIn></FaLinkedinIn>
               </a>
-              <a className="pauto" href="https://github.com/rel1ght">
+              <a
+                className="pauto"
+                target="_blank"
+                href="https://github.com/rel1ght"
+              >
                 <FaGithub></FaGithub>
               </a>
-              <Link className="pauto" to="/img/resume.pdf">
+              <a className="pauto" target="_blank" href="/img/resume.pdf">
                 <FaFileAlt className="p-0"></FaFileAlt>
-              </Link>
+              </a>
             </div>
           </div>
         </section>

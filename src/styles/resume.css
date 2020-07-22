@@ -15,6 +15,9 @@ body {
     padding-top: 0;
     padding-left: 17rem;
   }
+  .thumbTitleRow {
+    height: 3.5rem;
+  }
 }
 
 h1,
@@ -264,13 +267,15 @@ hr.seperator {
 .workContent {
   height: 0;
 }
-.workThumbnail {
+.maxWidth {
   max-width: 9rem;
-  margin: 0.4rem;
+}
+.workThumbnail {
   box-shadow: 0 5px 5px 1px black;
   cursor: pointer;
   filter: grayscale(50%) brightness(80%);
 }
+
 .workThumbnail:hover {
   filter: none;
   transform: translateY(0.2rem);
@@ -279,7 +284,13 @@ hr.seperator {
   height: 100%;
   margin-bottom: -0.4rem;
 }
-
+.closeWorkContent {
+  border: 0;
+  z-index: 2;
+}
+.negativeMargin {
+  margin-bottom: -2rem;
+}
 #expandedArrow {
   height: 100%;
 }
