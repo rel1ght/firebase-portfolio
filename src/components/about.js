@@ -179,9 +179,9 @@ class About extends React.Component {
               </a>
             </div>
             <p className="pauto lead mb-5 ">
-              I’m a lot of things, but unapproachable isn’t one of them! I love
-              hearing from new people. Feel free to send me a message if you
-              have a question, comment, or just want to chat!
+              I’m a lot of things, including reachable! I love hearing from new
+              people. Feel free to send me a message if you have a question,
+              comment, or just want to chat!
             </p>
             <div className="social-icons">
               <a

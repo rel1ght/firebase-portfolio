@@ -96,7 +96,7 @@ function FenceContent() {
               </p>
               <p>
                 Create a place where the artist can add art, write replies,
-                analyze engagement, organize shops, and report copryright
+                analyze engagement, organize shops, and report copyright
                 infringement, in multiple marketplaces, at the same time. Pair
                 that with image recognition/content detection to catch copycats.
                 The result is Fence.
