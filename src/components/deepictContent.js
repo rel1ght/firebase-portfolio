@@ -39,7 +39,7 @@ function DeepictContent() {
                 </a>
               </h4>
             </div>
-            <div className="col-12 px-4 px-lg-2 mb-5 mt-2">
+            <div className="col-12 px-5 px-lg-2 mb-5 mt-2">
               <iframe
                 height="700px"
                 width="100%"

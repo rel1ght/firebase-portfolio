@@ -170,7 +170,11 @@ class About extends React.Component {
             <div className="d-block d-md-none" id="mobileonlyextraspace"></div>
             <br />
             <div className="pauto subheading mb-5 ml-1">
-              <a href="tel:402-612-3862">(402) 612-3862</a>&nbsp;·&nbsp;
+              <a href="tel:402-612-3862">(402) 612-3862</a>
+              <span className="d-md-none">
+                <br />
+              </span>
+              <span className="d-none d-md-inline">&nbsp;·&nbsp;</span>
               <a
                 className="pauto text-lowercase"
                 href="mailto:contact@tylermanion.xyz"

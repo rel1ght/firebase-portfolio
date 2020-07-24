@@ -60,9 +60,7 @@ p.lead {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.5rem;
 }
-/* .social-icons {
-  margin-right: 1rem;
-} */
+
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
