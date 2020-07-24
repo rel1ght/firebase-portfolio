@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { useMediaQuery } from "react-responsive"
 import WorkThumb from "./workThumb"
 import WorkContent from "./workContent"
 import FenceContent from "./fenceContent"
@@ -7,9 +8,6 @@ import DeepictContent from "./deepictContent"
 import MsgContent from "./msgContent"
 import WorkContext from "./context"
 function WorkRow() {
-  function test(test2) {
-    console.log("testFunc: ", test2)
-  }
   const [currentContent, setCurrentContent] = useState("")
   const [activeThumbnail, setActiveThumbnail] = useState("")
   const [contentExpanded, setContentExpanded] = useState(false)
@@ -54,6 +52,13 @@ function WorkRow() {
         <div className="row justify-content-around">
           <div className="col-3">
             <WorkThumb
+              src="./img/deepictthumbnail.png"
+              title="Deepict"
+              content={<DeepictContent />}
+            />
+          </div>
+          <div className="col-3">
+            <WorkThumb
               src="./img/mountainskygoldensthumbnail.png"
               title="Mountain Sky Goldens"
               content={<MsgContent />}
@@ -66,13 +71,7 @@ function WorkRow() {
               content={<FenceContent />}
             />
           </div>
-          <div className="col-3">
-            <WorkThumb
-              src="./img/deepictthumbnail.png"
-              title="Deepict"
-              content={<DeepictContent />}
-            />
-          </div>
+
           <div className="col-3">
             <WorkThumb
               src="./img/youromahathumbnail.jpg"

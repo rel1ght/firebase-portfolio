@@ -161,7 +161,7 @@ class About extends React.Component {
                 <h2
                   className="pauto typewrite d-inline orange"
                   data-period="2000"
-                  data-type='[ "a Developer.", "a Designer.", "an Artist.", "a Maker." "an Eagle Scout", "an I.T. Innovation Grad", "from Omaha.", "24 years old.", "looking for a job." ]'
+                  data-type='[ "a Developer.", "a Designer.", "an Artist.", "a Maker.", "an Eagle Scout", "an I.T. Innovation Grad", "from Omaha.", "24 years old.", "looking for a job." ]'
                 >
                   <span className="pauto wrap"></span>
                 </h2>

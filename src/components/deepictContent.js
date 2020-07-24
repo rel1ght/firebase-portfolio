@@ -255,31 +255,30 @@ function DeepictContent() {
                 Luckily for me, I wouldn't have to start from scratch. There are
                 open-source style transfer models, that have been pre-trained.
                 That being said, working with neural networks is no simple task.
-                <p>
-                  I ended up implementing two different versions: one for the
-                  browser, and one for the server. The browser version was
-                  relatively straightforward, but it would freeze up the
-                  interface until it was done. It wasn't a good user experience
-                  at all.
-                </p>
-                <p>
-                  The reason it was freezing up was because JavaScript is a
-                  single-threaded language. Support for multi-threading while
-                  working with images is still experimental, and it looked like
-                  it wouldn't be a viable option for at least a couple of years.
-                  On top of that, mobile devices couldn't handle the task at
-                  all. Trying to run style transfer in a mobile browser wouldn't
-                  just crash the page...but the whole browser as well.
-                </p>
-                <p>
-                  I'm confident that if I intended to turn the prototype into
-                  the idea from part one, I'd be able to make it work. Compiling
-                  the code into native apps using Ionic would let me have access
-                  to a lot more resources than just through the browser, and I'm
-                  sure there's threading options too. However, the time it would
-                  take to work out all of the kinks was beyond the scope of my
-                  project, so I turned to a second option: cloud functions.
-                </p>
+              </p>
+              <p>
+                I ended up implementing two different versions: one for the
+                browser, and one for the server. The browser version was
+                relatively straightforward, but it would freeze up the interface
+                until it was done. It wasn't a good user experience at all.
+              </p>
+              <p>
+                The reason it was freezing up was because JavaScript is a
+                single-threaded language. Support for multi-threading while
+                working with images is still experimental, and it looked like it
+                wouldn't be a viable option for at least a couple of years. On
+                top of that, mobile devices couldn't handle the task at all.
+                Trying to run style transfer in a mobile browser wouldn't just
+                crash the page...but the whole browser as well.
+              </p>
+              <p>
+                I'm confident that if I intended to turn the prototype into the
+                idea from part one, I'd be able to make it work. Compiling the
+                code into native apps using Ionic would let me have access to a
+                lot more resources than just through the browser, and I'm sure
+                there's threading options too. However, the time it would take
+                to work out all of the kinks was beyond the scope of my project,
+                so I turned to a second option: cloud functions.
               </p>
             </div>
             <div className="col-12 col-md-6 col-lg-4 px-5">

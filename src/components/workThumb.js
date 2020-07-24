@@ -1,11 +1,19 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import WorkContext from "./context"
+import { useMediaQuery } from "react-responsive"
 function WorkThumb({ src, title, content }) {
   const { contextValues } = React.useContext(WorkContext)
   const thumbnailClick = contextValues.thumbnailClick
   const activeThumbnail = contextValues.activeThumbnail
-
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 })
   const ref = React.useRef(null)
+  useEffect(() => {
+    if (!isTabletOrMobile) {
+      if (title === "Deepict") {
+        thumbnailClick(null, ref, content)
+      }
+    }
+  }, [isTabletOrMobile])
   return (
     <>
       <div className="row justify-content-center maxWidth mx-auto">
