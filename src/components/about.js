@@ -161,7 +161,7 @@ class About extends React.Component {
                 <h2
                   className="pauto typewrite d-inline orange"
                   data-period="2000"
-                  data-type='[ "a Developer.", "a Designer.", "an Artist.", "a Maker.", "a Student.", "an I.T. Innovation Grad", "from Omaha.", "24 years old.", "looking for a job." ]'
+                  data-type='[ "a Developer.", "a Designer.", "an Artist.", "a Maker." "an Eagle Scout", "an I.T. Innovation Grad", "from Omaha.", "24 years old.", "looking for a job." ]'
                 >
                   <span className="pauto wrap"></span>
                 </h2>
@@ -184,23 +184,36 @@ class About extends React.Component {
               comment, or just want to chat!
             </p>
             <div className="social-icons">
-              <a
-                className="pauto"
-                target="_blank"
-                href="https://www.linkedin.com/in/tyler-manion-98690513a/"
-              >
-                <FaLinkedinIn></FaLinkedinIn>
-              </a>
-              <a
-                className="pauto"
-                target="_blank"
-                href="https://github.com/rel1ght"
-              >
-                <FaGithub></FaGithub>
-              </a>
-              <a className="pauto" target="_blank" href="/img/resume.pdf">
-                <FaFileAlt className="p-0"></FaFileAlt>
-              </a>
+              <div className="d-inline-flex flex-column mr-4">
+                <a
+                  className="pauto mx-auto"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/tyler-manion-98690513a/"
+                >
+                  <FaLinkedinIn></FaLinkedinIn>
+                </a>
+                <p className="text-subtitle small text-center mt-1">LinkedIn</p>
+              </div>
+              <div className="d-inline-flex flex-column mr-4">
+                <a
+                  className="pauto mx-auto"
+                  target="_blank"
+                  href="https://github.com/rel1ght"
+                >
+                  <FaGithub></FaGithub>
+                </a>
+                <p className="text-subtitle small text-center mt-1">GitHub</p>
+              </div>
+              <div className="d-inline-flex flex-column mr-0">
+                <a
+                  className="pauto mx-auto"
+                  target="_blank"
+                  href="/img/resume.pdf"
+                >
+                  <FaFileAlt className="p-0"></FaFileAlt>
+                </a>
+                <p className="text-subtitle small text-center mt-1">Resume</p>
+              </div>
             </div>
           </div>
         </section>

@@ -39,74 +39,119 @@ function YourOmahaContent() {
               </p>
               <h5 className="orange mt-3">The Premise:</h5>
               <p>
-                Online shops such as Redbubble and Society6 offer digital
-                artists a fantastic opportunity to reach a wide audience and put
-                their work on everything from pillows to stickers, without
-                having to worry about logistics.
+                Our team, along with six others, were tasked with designing a
+                way to improve Omaha through the use of technology, as part of a
+                "Smart City" Initiative. As our team listened to city officials
+                describe the parameters of the project, we came to the
+                collective realization that none of us knew much, if anything,
+                about our local government. The city officials talked about how
+                important citizen involvement and feedback was in legislative
+                change.
               </p>
               <p>
-                Each time an item is purchased, the marketplace will handle the
-                printing, shipping, and payment without the artist having to do
-                anything. In return, the marketplace takes a percentage of the
-                sale.
+                We decided that a smart city started with a connected community.
               </p>
               <h5 className="orange mt-3">The Problem:</h5>
-              <div className="row">
-                <div className="col-12 col-md-6">
-                  <p>
-                    The process for the artist isn't as easy as it first seems.
-                    Creating a successful business often means setting up
-                    multiple accounts tailored to different audiences, and
-                    duplicating those accounts on multiple sites. Also, the
-                    easiest part, posting artwork, ends up creating major
-                    hurdles. With the low barrier to entry marketplaces get
-                    saturated with art, and it's tough to stand out. If an
-                    artist does manage to stand out, their work is quickly
-                    copied and sometimes outright stolen by other online
-                    artists, or even by{" "}
-                    <a
-                      target="_blank"
-                      href="https://www.boredpanda.com/people-caught-copying-plagiarism-stealing-art-knockoffs/"
-                    >
-                      large companies.
-                    </a>
-                  </p>
-                  <p>
-                    Trying to manage so many different accounts and protect each
-                    from copyright infringement can quickly become a full-time
-                    job in its own right, and that leaves little time to
-                    actually do what the artist loves: create.
-                  </p>
-                </div>
-                <div className="col-12 col-md-6">
-                  <img
-                    className="img-fluid rounded"
-                    src="./img/fencecopyrightviolation.jpg"
-                  ></img>
-                  <p className="text-subtitle small text-center mt-1">
-                    Art from Katie Holmes. Image from boredpanda.com
-                  </p>
-                </div>
-              </div>
+
+              <p>
+                There’s a disconnect that is long-standing and widely felt. Some
+                of that comes from skepticism in the efficiency of government,
+                and some of it comes from a lack of transparency into what
+                actually occurs. In this case ignorance isn’t bliss, it’s bias.
+                Many assume that participation would be inconvenient and
+                ineffective, so they don’t try. This causes a lack of interest
+                and involvement that is directly detrimental to those who need
+                representation in their local government the most.
+              </p>
+
               <h5 className="orange mt-3">The Solution:</h5>
-              <p className="lead text-primary">
-                Give the online artist one place where they can manage all of
-                their accounts at once.
+              <p className="text-primary m-4">
+                <span className="lead">Create an app that:</span>
+                <ol className="mt-2">
+                  <li>
+                    Makes it easy to get in contact with representatives to
+                    share one’s voice
+                  </li>
+                  <li>
+                    Shows information about local elected officials to encourage
+                    informed voting
+                  </li>
+                  <li>
+                    Fosters community engagement through the publication of
+                    events and organizations
+                  </li>
+                </ol>
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <p>
+                We set to work by first testing whether our base assumptions
+                were accurate. We asked interviewees questions on their
+                knowledge of local representatives, participation in local
+                government, participation in communities, and their perspectives
+                on local government as a whole. We found that citizen engagement
+                is low, for the same reasons we experienced ourselves. From our
+                inquiry we created 3 personas that informed our designs and
+                decision making going forward.
               </p>
               <p>
-                Create a place where the artist can add art, write replies,
-                analyze engagement, organize shops, and report copyright
-                infringement, in multiple marketplaces, at the same time. Pair
-                that with image recognition/content detection to catch copycats.
-                The result is Fence.
+                From there we created rough sketches test out various layouts,
+                and after some iteration and user feedback, we ended up with a
+                moderately complete mockup made (by me) in Adobe Xd.
               </p>
               <p>
-                With the idea for Fence in mind I took the concept through the
-                full design process. I created thumbnails, personas, wireframes,
-                prototypes, a style guide, a logo, and eventually a polished
-                mockup. Who knows, maybe someday I'll get around to coding it
-                too! The full process is documented in the final report, which
-                can be downloaded using the link below.
+                We wanted to make the chat function the primary focus, from the
+                very start. There's a big bold chat button right on the
+                homepage, with a second link to chat in the top menu bar. The
+                chat is meant to direct people to who can help them with their
+                inquiry, or to answer simple questions. It's like a mix between
+                Amazon's chatbot and the mayor's hotline. Also on the homepage
+                is the councilperson for the individual's district, with a
+                description and contact information.
+              </p>
+              <p>
+                Next is a list of other elected officials, a list of upcoming
+                events (not pictured), and a survey section.
+              </p>
+            </div>
+            <div className="col-12 col-md-6">
+              <img
+                className="img-fluid rounded"
+                src="./img/youromaha1.png"
+              ></img>
+              <p className="text-subtitle small text-center mt-1">
+                Home screen / Chatbot
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-12 col-md-6">
+              <p>
+                Each section on the homepage is linked to a dedicated page. The
+                events page is the expanded version of the upcoming events
+                section on the homepage. From it a citizen can sort events, see
+                information about them, and expand events to watch a livestream
+                if applicable.
+              </p>
+              <p>
+                The homepage also offers a survey section that is simple and
+                unintimidating, to encourage participation. Under that is an
+                organizations section, which expands into a full list.
+              </p>
+              <p>
+                A poster-style infograph for the whole project can be seen using
+                the link below!
+              </p>
+            </div>
+            <div className="col-12 col-md-6">
+              <img
+                className="img-fluid rounded"
+                src="./img/youromaha2.png"
+              ></img>
+              <p className="text-subtitle small text-center mt-1">
+                Events Page/ Home Screen Continued
               </p>
             </div>
           </div>
