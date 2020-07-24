@@ -57,7 +57,7 @@ export default () => (
         </p>
         <br />
         <img
-          src="img/gen.jpg"
+          src="img/pearlearring.jpg"
           className="img-fluid rounded mb-4 w-75 mx-auto d-block"
           alt="Responsive image"
         />
@@ -70,8 +70,8 @@ export default () => (
           abstract yet more concrete at the same time. Generative art is the
           process of creating art from code, and that’s art in and of itself. My
           senior capstone is focused on exploring the relationship between the
-          process and the product, and I’m excited to write more about it once
-          I’m farther along.
+          process and the product, and you can read more about it in the work
+          section!
         </p>
       </div>
     </section>
