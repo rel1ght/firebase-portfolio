@@ -4,5 +4,22 @@
       "path": "."
     }
   ],
-  "settings": {}
+  "settings": {
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#1F1D7E",
+      "titleBar.activeBackground": "#2B28B0",
+      "titleBar.activeForeground": "#FCFCFE"
+    },
+    "restoreTerminals.terminals": [
+      {
+        "splitTerminals": [
+          {
+            "name": "dev",
+            "commands": ["npm run start"]
+          }
+        ]
+      }
+    ],
+    "autoHide.autoHidePanel": false
+  }
 }
