@@ -16,11 +16,10 @@ export default () => (
             <div className="subheading mb-3 green">
               Bachelor of I.T. Innovation
             </div>
-            <div>Emphasis on Web Development and Design</div>
-            <p>GPA: 3.2</p>
+            <div>Emphasis UX Design and Web Development</div>
           </div>
           <div className="resume-date text-md-right">
-            <span className="blue">August 2016 - May 2020</span>
+            <span className="blue">August 2017 - May 2020</span>
           </div>
         </div>
 
@@ -28,8 +27,7 @@ export default () => (
           <div className="resume-content">
             <h3 className="mb-0 orange">Utah Valley University</h3>
             <div className="subheading mb-3 green">Bachelor of Fine Arts</div>
-            <div>Emphasis on Graphic Design</div>
-            <p>GPA: 3.72</p>
+            <div>Emphasis Graphic Design</div>
           </div>
           <div className="resume-date text-md-right">
             <span className="blue">August 2014 - December 2015</span>

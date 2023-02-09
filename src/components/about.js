@@ -3,6 +3,24 @@ import { Link } from "gatsby"
 import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa"
 
 import Particles from "react-particles-js"
+
+
+
+function calculateAge(birthMonth, birthDay, birthYear) {
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    var currentMonth = currentDate.getMonth();
+    var currentDay = currentDate.getDate(); 
+    var calculatedAge = currentYear - birthYear;
+
+    if (currentMonth < birthMonth - 1) {
+        calculatedAge--;
+    }
+    if (birthMonth - 1 == currentMonth && currentDay < birthDay) {
+        calculatedAge--;
+    }
+    return calculatedAge;
+}
 class About extends React.Component {
   componentDidMount() {
     var elements = document.getElementsByClassName("typewrite")
@@ -16,6 +34,7 @@ class About extends React.Component {
     }
   }
   render() {
+    const currentAge = calculateAge(5,3,1996)
     return (
       <>
         <div
@@ -161,7 +180,7 @@ class About extends React.Component {
                 <h2
                   className="pauto typewrite d-inline orange"
                   data-period="2000"
-                  data-type='[ "a Developer.", "a Designer.", "an Artist.", "a Maker.", "an Eagle Scout", "an I.T. Innovation Grad", "from Omaha.", "24 years old.", "looking for a job." ]'
+                  data-type='[ "a Developer.", "a Designer.", "an Artist.", "a Maker.", "an Eagle Scout", "an I.T. Innovation Grad", "from Omaha.", "26 years old.", "looking for a job." ]'
                 >
                   <span className="pauto wrap"></span>
                 </h2>
@@ -183,8 +202,7 @@ class About extends React.Component {
               </a>
             </div>
             <p className="pauto lead mb-5 ">
-              I’m a lot of things, including reachable! I love hearing from new
-              people. Feel free to send me a message if you have a question,
+              I’m a lot of things, including looking for a job! Feel free to send me a message if you have a question,
               comment, or just want to chat!
             </p>
             <div className="social-icons">
@@ -192,7 +210,7 @@ class About extends React.Component {
                 <a
                   className="pauto mx-auto"
                   target="_blank"
-                  href="https://www.linkedin.com/in/tyler-manion-98690513a/"
+                  href="https://www.linkedin.com/in/tylermanion/" rel="noreferrer"
                 >
                   <FaLinkedinIn></FaLinkedinIn>
                 </a>
@@ -202,7 +220,7 @@ class About extends React.Component {
                 <a
                   className="pauto mx-auto"
                   target="_blank"
-                  href="https://github.com/rel1ght"
+                  href="https://github.com/rel1ght" rel="noreferrer"
                 >
                   <FaGithub></FaGithub>
                 </a>
@@ -212,7 +230,7 @@ class About extends React.Component {
                 <a
                   className="pauto mx-auto"
                   target="_blank"
-                  href="/img/resume.pdf"
+                  href="/img/Tyler Manion Resume.pdf"
                 >
                   <FaFileAlt className="p-0"></FaFileAlt>
                 </a>

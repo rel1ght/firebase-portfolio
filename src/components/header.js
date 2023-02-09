@@ -49,13 +49,13 @@ export default props => (
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" to="/#work">
-            Work
+          <Link className="nav-link js-scroll-trigger" to="/#experience">
+            Experience
           </Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link js-scroll-trigger" to="/#experience">
-            Experience
+          <Link className="nav-link js-scroll-trigger" to="/#work">
+            Work
           </Link>
         </li>
         <li className="nav-item">

@@ -18,9 +18,9 @@ export default () => (
     <div className="container-fluid p-0 flex-bg-primary position-relative">
       <About id="About" />
       <hr className="m-0 seperator" />
-      <Work />
-      <hr className="m-0 seperator" />
       <Experience />
+      <hr className="m-0 seperator" />
+      <Work />
       <hr className="m-0 seperator" />
       <Education />
       <hr className="m-0 seperator" />
