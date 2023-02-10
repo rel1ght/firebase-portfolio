@@ -19,28 +19,6 @@ export default function Interests() {
   )
 }
 
-function OutdoorsInterest() {
-  return (
-    <>
-      <br />
-      <img
-        src="img/Mountainlake.jpg"
-        className="img-fluid rounded mb-4 w-75 mx-auto d-block"
-        alt="Responsive image"
-      />
-      <p>
-        I love the outdoors. I’m an eagle scout, and any weekend camping is a
-        weekend well spent. That being said, I think at this point I’d rather
-        sleep in the rain than put away another wet tent. This past summer I
-        went on a 14 mile hike up to a mountain lake. The view was beautiful,
-        but honestly it wasn’t as beautiful as the sight of my car at the end of
-        the trail. My favorite form of exercise is mountain biking, but only the
-        downhill parts. The uphill parts are my least favorite form of exercise.
-      </p>
-    </>
-  )
-}
-
 function ArtInterest() {
   return (
     <>
@@ -58,6 +36,29 @@ function ArtInterest() {
         a week to find the perfect implement for my latest project. It’s a mess,
         but I like it that way. More often than not I’ll get stabbed by the
         pencil I need in my haste to grab the one I was looking for.{" "}
+      </p>
+    </>
+  )
+}
+
+function GenArtInterest() {
+  return (
+    <>
+      <img
+        src="img/pearlearring.jpg"
+        className="img-fluid rounded mb-4 w-75 mx-auto d-block"
+        alt="Responsive image"
+      />
+      <p className="mb-0">
+        My latest obsession is generative art. When I first started programming,
+        I thought that art and code were polar ends of a spectrum. Rational
+        versus irrational. Logic against emotion. But, the more I program, the
+        more I come to appreciate that programming is just another form of
+        expression. It’s poetry in a sense that’s more abstract yet more
+        concrete at the same time. Generative art is the process of creating art
+        from code, and that’s art in and of itself. My senior capstone is
+        focused on exploring the relationship between the process and the
+        product, and you can read more about it in the work section!
       </p>
     </>
   )
@@ -84,24 +85,23 @@ function TechInterest() {
   )
 }
 
-function GenArtInterest() {
+function OutdoorsInterest() {
   return (
     <>
+      <br />
       <img
-        src="img/pearlearring.jpg"
+        src="img/Mountainlake.jpg"
         className="img-fluid rounded mb-4 w-75 mx-auto d-block"
         alt="Responsive image"
       />
-      <p className="mb-0">
-        My latest obsession is generative art. When I first started programming,
-        I thought that art and code were polar ends of a spectrum. Rational
-        versus irrational. Logic against emotion. But, the more I program, the
-        more I come to appreciate that programming is just another form of
-        expression. It’s poetry in a sense that’s more abstract yet more
-        concrete at the same time. Generative art is the process of creating art
-        from code, and that’s art in and of itself. My senior capstone is
-        focused on exploring the relationship between the process and the
-        product, and you can read more about it in the work section!
+      <p>
+        I love the outdoors. I’m an eagle scout, and any weekend camping is a
+        weekend well spent. That being said, I think at this point I’d rather
+        sleep in the rain than put away another wet tent. This past summer I
+        went on a 14 mile hike up to a mountain lake. The view was beautiful,
+        but honestly it wasn’t as beautiful as the sight of my car at the end of
+        the trail. My favorite form of exercise is mountain biking, but only the
+        downhill parts. The uphill parts are my least favorite form of exercise.
       </p>
     </>
   )

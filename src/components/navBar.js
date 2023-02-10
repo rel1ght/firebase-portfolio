@@ -2,7 +2,8 @@ import React from "react"
 import Scrollspy from "react-scrollspy"
 import { Link } from "gatsby"
 
-export default function Navbar() {
+export default function Navbar({ siteSections }) {
+  const sectionAnchorTags = siteSections.map(section => section.anchor)
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -14,7 +15,7 @@ export default function Navbar() {
           <img
             className="img-fluid img-profile rounded-circle mx-auto mb-2"
             src="img/profile.jpg"
-            alt=""
+            alt="avatar"
           />
         </span>
       </Link>
@@ -31,53 +32,20 @@ export default function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <Scrollspy
-          items={[
-            "about",
-            "work",
-            "experience",
-            "education",
-            "skills",
-            "interests",
-            "awards",
-          ]}
+          items={sectionAnchorTags}
           currentClassName="is-current"
           className="navbar-nav"
         >
-          <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="/#about">
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="/#experience">
-              Experience
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="/#work">
-              Work
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="/#education">
-              Education
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="/#skills">
-              Skills
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="/#interests">
-              Interests
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link js-scroll-trigger" to="/#awards">
-              Awards
-            </Link>
-          </li>
+          {siteSections.map(section => (
+            <li key={section.anchor} className="nav-item">
+              <Link
+                className="nav-link js-scroll-trigger"
+                to={`/#${section.anchor}`}
+              >
+                {section.title}
+              </Link>
+            </li>
+          ))}
         </Scrollspy>
       </div>
     </nav>
