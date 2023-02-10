@@ -33,8 +33,8 @@
     "react-ripples": "^2.2.1",
     "react-scrollspy": "^3.4.2",
     "react-scrollspy-nav": "^1.2.4",
-    "smooth-scroll": "^16.1.3",
-    "typed.js": "^2.0.11"
+    "react-typist": "^2.0.5",
+    "smooth-scroll": "^16.1.3"
   },
   "devDependencies": {
     "eslint": "^8.33.0",
