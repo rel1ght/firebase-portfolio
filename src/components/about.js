@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa"
 
 import Particles from "react-particles-js"
 import Typist from "react-typist"
-import particlesConfig from "../utils/config/particlesConfig.json"
+import particlesConfig from "../config/particlesConfig.json"
 import calculateAge from "../utils/calculateAge"
 
 const typingStatements = [
