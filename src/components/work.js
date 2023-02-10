@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import WorkRow from "./workRow"
-function Work() {
+export default function Work() {
   return (
     <>
       <section className="resume-section p-3 p-lg-5 d-flex" id="work">
@@ -17,4 +17,3 @@ function Work() {
     </>
   )
 }
-export default Work
