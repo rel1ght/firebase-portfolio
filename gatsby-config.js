@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  plugins: ["gatsby-plugin-react-helmet"],
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: { implementation: require("sass") },
+    },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 }

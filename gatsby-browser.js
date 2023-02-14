@@ -1,8 +1,8 @@
-import "./node_modules/bootstrap/dist/css/bootstrap.css"
-import "./src/styles/resume.css"
+import "./node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "popper.js"
 import $ from "jquery"
 import "bootstrap"
+import "./src/styles/resume.css"
 
 let SmoothScroll = require("smooth-scroll")
 if (typeof window !== "undefined") {
