@@ -1,7 +1,3 @@
-/* * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE) */
-
 body {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -327,4 +323,40 @@ hr.seperator {
 .awssld__content > img {
   border: 0;
   border-radius: 0.2rem;
+}
+
+.btn-group-xs > .btn,
+.btn-xs {
+  padding: 0.25rem 0.4rem;
+  font-size: 0.711rem;
+  line-height: 0.5;
+  border-radius: 0.2rem;
+}
+
+.striped-background::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 4%;
+  left: 2%;
+  right: 2%;
+  bottom: 4%;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4) 4px,
+    transparent 4px,
+    transparent 6px
+  );
+  border-radius: 50rem;
+}
+.striped-background {
+  position: relative;
+}
+.striped-background * {
+  position: relative;
+  z-index: 1;
+}
+.avatar-image {
+  max-width: 20rem;
 }

@@ -1,0 +1,12 @@
+$theme-colors: (
+  "success": #58682d,
+  "info": #41769b,
+  "warning": #bd5d38,
+  "light": #7d8491,
+  "yellow": #f7db3c,
+  "dark": #282a36,
+);
+$border-radius: 1.5rem !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./resume";

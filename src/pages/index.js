@@ -9,7 +9,7 @@ import Skills from "../components/skills"
 import Projects from "../components/projects"
 import Interests from "../components/interests"
 import Awards from "../components/awards"
-
+import "../styles/custom-bootstrap.scss"
 const siteSections = [
   { title: "About", anchor: "about", component: <About /> },
   { title: "Experience", anchor: "experience", component: <Experience /> },
