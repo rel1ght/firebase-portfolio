@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa"
 
-import Particles from "react-particles-js"
-import Typist from "react-typist"
+import Particles from "react-particles"
+import Typist from "react-typist-component"
 import particlesConfig from "../config/particlesConfig.json"
 import calculateAge from "../utils/calculateAge"
 
@@ -60,24 +60,23 @@ export default function About() {
             </h2>
             <div>
               <h2 className="pauto mb-2 d-inline">and I&apos;m&nbsp;</h2>
-              {typingStatus && (
-                <Typist
-                  onTypingDone={() => setTypingStatus(false)}
-                  cursor={{ show: false }}
-                  stdTypingDelay={40}
-                  avgTypingDelay={100}
-                  className="d-inline"
-                  startDelay={2000}
-                >
-                  {typingStatements.map(statement => (
-                    <span key={statement}>
-                      <h2 className="pauto d-inline orange">{statement}</h2>
-                      <Typist.Backspace count={statement.length} delay={4000} />
-                    </span>
-                  ))}
-                  <span className="pauto wrap"></span>
-                </Typist>
-              )}
+              <Typist
+                loop
+                typingDelay={() => Math.max(Math.random() * 150, 40)}
+                className="d-inline"
+                startDelay={2000}
+                backspaceDelay={40}
+              >
+                {typingStatements.map(statement => (
+                  <span key={statement}>
+                    <h2 className="pauto d-inline orange">{statement}</h2>
+                    <Typist.Delay ms={4000} />
+                    <Typist.Backspace count={statement.length} />
+                    <Typist.Delay ms={500} />
+                  </span>
+                ))}
+                <span className="pauto wrap"></span>
+              </Typist>
             </div>
           </div>
           <div className="d-block d-md-none" id="mobileonlyextraspace"></div>
