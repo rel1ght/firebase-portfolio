@@ -1,8 +1,14 @@
 import React from "react"
 import { Link as ScrollLink } from "react-scroll"
 import { StaticImage } from "gatsby-plugin-image"
+// only for bootstrap4's navbar implementation (gross)
+import $ from "jquery"
 
 export default function Navbar({ siteSections }) {
+  function handleClick() {
+    $(".navbar-collapse").collapse("hide")
+  }
+
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -26,6 +32,7 @@ export default function Navbar({ siteSections }) {
         </span>
       </ScrollLink>
       <button
+        id="navbar-toggle-button"
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -48,6 +55,7 @@ export default function Navbar({ siteSections }) {
                 smooth="easeInOutQuint"
                 offset={-70}
                 duration={1000}
+                onClick={handleClick}
               >
                 {section.title}
               </ScrollLink>

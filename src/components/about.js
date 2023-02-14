@@ -39,13 +39,13 @@ export default function About() {
           id="aboutbody"
         >
           <div className="d-none d-lg-block " id="emptydiv"></div>
-          <h2 className="pauto mb-0 pb-0 green display-4" id="hi">
+          <h2 className="pauto mb-2 mb-lg-0 pb-0 green display-4" id="hi">
             Hi,
           </h2>
           <div id="extraspace">
-            <h2 className="pauto mb-2 d-inline">My name is</h2>
-            <h2 className="pauto mb-2 d-inline text-primary display-3">
-              &nbsp;Tyler Manion
+            <h2 className="pauto mb-2 d-block d-lg-inline">My name is&nbsp;</h2>
+            <h2 className="pauto mb-2 d-block d-lg-inline text-primary display-3">
+              Tyler Manion
             </h2>
             <div>
               <h2 className="pauto mb-2 d-inline">and I&apos;m&nbsp;</h2>
