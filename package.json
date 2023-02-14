@@ -40,7 +40,8 @@
     "react-ripples": "*",
     "react-scroll": "^1.8.9",
     "react-typist-component": "^1.0.5",
-    "sass": "^1.58.1"
+    "sass": "^1.58.1",
+    "tsparticles": "^2.9.3"
   },
   "engines": {
     "node": ">=18.0.0"

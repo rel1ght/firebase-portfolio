@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa"
-
-import Particles from "react-particles"
 import Typist from "react-typist-component"
-import particlesConfig from "../config/particlesConfig.json"
+
+import Particles from "./particles"
 import calculateAge from "../utils/calculateAge"
 
 const typingStatements = [
@@ -28,25 +27,15 @@ export default function About() {
     }
   }, [typingStatus])
   return (
-    <>
-      <div
-        className="pauto p-0 vh-100 d-none d-lg-block position-absolute container-fluid"
-        style={{ zIndex: 1 }}
-      >
-        <Particles
-          className="vh-100"
-          width="100%"
-          height="100%"
-          params={particlesConfig}
-        />
-      </div>
+    <div className="position-relative">
+      <Particles />
       <section
         className="pnone resume-section p-3 p-lg-5  align-items-center"
         id="about"
       >
         <div
           className="w-100 position-relative"
-          style={{ zIndex: 3 }}
+          style={{ zIndex: 1 }}
           id="aboutbody"
         >
           <div className="d-none d-lg-block " id="emptydiv"></div>
@@ -67,7 +56,7 @@ export default function About() {
                 startDelay={2000}
                 backspaceDelay={40}
               >
-                {typingStatements.map(statement => (
+                {typingStatements.map((statement) => (
                   <span key={statement}>
                     <h2 className="pauto d-inline orange">{statement}</h2>
                     <Typist.Delay ms={4000} />
@@ -135,6 +124,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
