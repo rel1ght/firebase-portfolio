@@ -1,24 +1,30 @@
 import React from "react"
-import Scrollspy from "react-scrollspy"
-import { Link } from "gatsby"
+import { Link as ScrollLink } from "react-scroll"
+import { StaticImage } from "gatsby-plugin-image"
 
 export default function Navbar({ siteSections }) {
-  const sectionAnchorTags = siteSections.map(section => section.anchor)
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
       id="sideNav"
     >
-      <Link to="/#about" className="navbar-brand js-scroll-trigger">
+      <ScrollLink
+        smooth="easeInOutQuint"
+        offset={-70}
+        duration={1000}
+        to="about"
+        className="navbar-brand js-scroll-trigger"
+      >
         <span className="d-block d-lg-none">Tyler Manion</span>
         <span className="d-none d-lg-block">
-          <img
+          <StaticImage
             className="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="img/profile.jpg"
+            src="../../static/img/profile.jpg"
             alt="avatar"
+            placeholder="blurred"
           />
         </span>
-      </Link>
+      </ScrollLink>
       <button
         className="navbar-toggler"
         type="button"
@@ -31,22 +37,23 @@ export default function Navbar({ siteSections }) {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <Scrollspy
-          items={sectionAnchorTags}
-          currentClassName="is-current"
-          className="navbar-nav"
-        >
-          {siteSections.map(section => (
+        <div className="navbar-nav">
+          {siteSections.map((section) => (
             <li key={section.anchor} className="nav-item">
-              <Link
-                className="nav-link js-scroll-trigger"
-                to={`/#${section.anchor}`}
+              <ScrollLink
+                currentClassName="is-current"
+                className="nav-link"
+                to={section.anchor}
+                spy={true}
+                smooth="easeInOutQuint"
+                offset={-70}
+                duration={1000}
               >
                 {section.title}
-              </Link>
+              </ScrollLink>
             </li>
           ))}
-        </Scrollspy>
+        </div>
       </div>
     </nav>
   )

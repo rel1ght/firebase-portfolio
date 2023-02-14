@@ -27,7 +27,7 @@ export default function Index() {
       <Navbar siteSections={siteSections} />
       <div className="container-fluid p-0 flex-bg-primary position-relative">
         {siteSections.map((section, index) => (
-          <React.Fragment key={section.anchor}>
+          <React.Fragment key={section.anchor} id={section.anchor}>
             {section.component}
             {/* don't show the hr on the last section */}
             {index !== siteSections.length - 1 && (

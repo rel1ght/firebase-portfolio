@@ -7,12 +7,21 @@
 module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: { implementation: require("sass") },
-    },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: { defaults: { formats: ["jpg"] } },
+    },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `static`,
+        // Path to the directory
+        path: `${__dirname}/static/`,
+      },
+    },
   ],
 }
