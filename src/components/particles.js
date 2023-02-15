@@ -129,5 +129,7 @@ const configObj = {
       },
     },
   },
+  fpsLimit: 60,
   detectRetina: true,
+  pauseOnOutsideViewport: true,
 }

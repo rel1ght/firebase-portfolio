@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react"
 import { useMediaQuery } from "react-responsive"
 import WorkThumb from "./workThumb"
 import WorkContent from "./workContent"
-import FenceContent from "./fenceContent"
-import YourOmahaContent from "./yourOmahaContent"
-import DeepictContent from "./deepictContent"
-import MsgContent from "./msgContent"
+import FenceContent from "./content/fenceContent"
+import YourOmahaContent from "./content/yourOmahaContent"
+import DeepictContent from "./content/deepictContent"
+import MsgContent from "./content/msgContent"
 import WorkContext from "./context"
 function WorkRow() {
   const [currentContent, setCurrentContent] = useState("")
@@ -50,6 +50,35 @@ function WorkRow() {
     <>
       <WorkContext.Provider value={{ contextValues }}>
         <div className="row justify-content-around">
+          <div className="col-3">
+            <WorkThumb
+              src="./img/deepictthumbnail.png"
+              title="Deepict"
+              content={<DeepictContent />}
+            />
+          </div>
+          <div className="col-3">
+            <WorkThumb
+              src="./img/mountainskygoldensthumbnail.png"
+              title="Mountain Sky Goldens"
+              content={<MsgContent />}
+            />
+          </div>
+          <div className="col-3 ">
+            <WorkThumb
+              src="./img/fencethumbnail.png"
+              title="Fence"
+              content={<FenceContent />}
+            />
+          </div>
+
+          <div className="col-3">
+            <WorkThumb
+              src="./img/youromahathumbnail.jpg"
+              title="Your Omaha"
+              content={<YourOmahaContent />}
+            />
+          </div>
           <div className="col-3">
             <WorkThumb
               src="./img/deepictthumbnail.png"

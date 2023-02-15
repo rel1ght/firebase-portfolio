@@ -18,9 +18,10 @@ function WorkThumb({ src, title, content }) {
     <>
       <div className="row justify-content-center maxWidth mx-auto">
         <img
+          alt="thumbnail"
           src={src}
           ref={ref}
-          onClick={e => thumbnailClick(e, ref, content)}
+          onClick={(e) => thumbnailClick(e, ref, content)}
           className={`workThumbnail rounded img-fluid mb-2 ${
             ref.current === activeThumbnail ? "activeThumbnail" : ""
           }`}
@@ -35,14 +36,14 @@ function WorkThumb({ src, title, content }) {
           {title}
         </h4>
       </div>
-      <div className="row justify-content-center">
+      {/* <div className="row justify-content-center">
         <img
           src="../img/arrow.svg"
           className={`workArrow w-25 mx-auto ${
             ref.current === activeThumbnail ? "d-block" : "d-none"
           }`}
         ></img>
-      </div>
+      </div> */}
     </>
   )
 }

@@ -10,7 +10,7 @@ import About from "../components/about"
 import Experience from "../components/experience"
 import Education from "../components/education"
 import Skills from "../components/skills"
-import Projects from "../components/projects"
+import Projects from "../components/projects/projects"
 import Interests from "../components/interests"
 import Awards from "../components/awards"
 

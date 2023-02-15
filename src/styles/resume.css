@@ -302,8 +302,11 @@ hr.seperator {
 }
 .workThumbnail {
   box-shadow: 0 5px 5px 1px black;
+  border: transparent 0.2rem solid;
+  border-radius: 0.2rem;
   cursor: pointer;
   filter: grayscale(50%) brightness(80%);
+  box-sizing: content-box;
 }
 
 .workThumbnail:hover {
@@ -349,7 +352,7 @@ hr.seperator {
   border: #bd5d38 0.2rem solid;
   border-radius: 0.2rem;
   filter: none;
-  transform: translateY(0.2rem);
+  /* transform: translateY(0.2rem); */
 }
 .activeThumbnail:hover {
   filter: grayscale(10%) brightness(90%);
