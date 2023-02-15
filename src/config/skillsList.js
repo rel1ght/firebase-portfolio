@@ -1,5 +1,10 @@
 import React from "react"
-import { MdConstruction } from "react-icons/md"
+import {
+  MdAutoFixHigh,
+  MdConstruction,
+  MdGroups,
+  MdWorkspaces,
+} from "react-icons/md"
 import {
   FaGitAlt,
   FaGulp,
@@ -12,25 +17,42 @@ import {
   FaJava,
   FaBootstrap,
   FaReact,
-  FaWordpressSimple,
   FaInvision,
   FaMap,
   FaDraftingCompass,
+  FaLightbulb,
+  FaAws,
+  FaSass,
+  FaBuilding,
 } from "react-icons/fa"
+
 import { RxFrame } from "react-icons/rx"
 import { GiRabbit, GiBrainstorm, GiResize } from "react-icons/gi"
-import { GrGatsbyjs, GrGraphQl, GrTest } from "react-icons/gr"
-import { CgFigma } from "react-icons/cg"
-import { RxNotionLogo } from "react-icons/rx"
-import { IoLogoIonic, IoMdRocket } from "react-icons/io"
+import { GrGatsbyjs, GrGraphQl } from "react-icons/gr"
+import { CgFigma, CgPerformance } from "react-icons/cg"
+import { IoMdRocket } from "react-icons/io"
 import {
+  SiAdobeindesign,
+  SiAdobepremierepro,
   SiAdobexd,
+  SiCypress,
+  SiExpress,
+  SiFirebase,
+  SiIonic,
+  SiJest,
   SiMaterialui,
   SiNextdotjs,
   SiProtodotio,
   SiRedux,
+  SiServerless,
+  SiTypescript,
 } from "react-icons/si"
-import { AiFillApi, AiFillExperiment } from "react-icons/ai"
+import {
+  AiFillApi,
+  AiFillExperiment,
+  AiFillGold,
+  AiFillMessage,
+} from "react-icons/ai"
 import {
   DiPerl,
   DiPhotoshop,
@@ -40,8 +62,17 @@ import {
   DiFirebase,
   DiMongodb,
   DiScrum,
+  DiJava,
+  DiTerminal,
+  DiPython,
+  DiWordpress,
 } from "react-icons/di"
-import { BsPersonLinesFill } from "react-icons/bs"
+import {
+  BsDoorOpenFill,
+  BsFillPatchQuestionFill,
+  BsPersonLinesFill,
+} from "react-icons/bs"
+import { RiFlowChart, RiFontSize2, RiMindMap } from "react-icons/ri"
 
 export const categories = {
   design: "design",
@@ -81,7 +112,7 @@ export const skillDict = {
     title: "CSS",
     description: "",
     category: categories.development,
-    tags: [tags.tool, tags.aquainted],
+    tags: [tags.tool],
   },
   designThinking: {
     icon: <GiBrainstorm />,
@@ -148,7 +179,7 @@ export const skillDict = {
   },
   journeyMaps: {
     icon: <FaMap />,
-    title: "Journey Maps",
+    title: "Journey mapping",
     description: "",
     category: categories.design,
     tags: [tags.technique],
@@ -177,6 +208,13 @@ export const skillDict = {
   mui: {
     icon: <SiMaterialui />,
     title: "Material UI",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool],
+  },
+  npm: {
+    icon: <FaNpm />,
+    title: "npm",
     description: "",
     category: categories.development,
     tags: [tags.tool],
@@ -239,7 +277,7 @@ export const skillDict = {
   },
   rest: {
     icon: <AiFillApi />,
-    title: "REST APIs",
+    title: "API integration",
     description: "",
     category: categories.development,
     tags: [tags.technique],
@@ -270,6 +308,294 @@ export const skillDict = {
     title: "XD",
     description: "",
     category: categories.design,
+    tags: [tags.tool],
+  },
+  // perl
+  perl: {
+    icon: <DiPerl />,
+    title: "Perl",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // gcp
+  gcp: {
+    icon: <DiGoogleCloudPlatform />,
+    title: "GCP",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // travisCI
+  travisCI: {
+    icon: <DiTravis />,
+    title: "TravisCI",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Firebase
+  firebase: {
+    icon: <SiFirebase />,
+    title: "Firebase",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Ionic
+  ionic: {
+    icon: <SiIonic />,
+    title: "Ionic",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // React-native
+  reactNative: {
+    icon: <FaReact />,
+    title: "React Native",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Java
+  java: {
+    icon: <DiJava />,
+    title: "Java",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // C
+  c: {
+    icon: <DiTerminal />,
+    title: "C",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Python
+  python: {
+    icon: <DiPython />,
+    title: "Python",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Sketch
+  sketch: {
+    icon: <FaSketch />,
+    title: "Sketch",
+    description: "",
+    category: categories.design,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Bootstrap
+  bootstrap: {
+    icon: <FaBootstrap />,
+    title: "Bootstrap",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Wordpress
+  wordpress: {
+    icon: <DiWordpress />,
+    title: "Wordpress",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Express
+  express: {
+    icon: <SiExpress />,
+    title: "Express",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Jest
+  jest: {
+    icon: <SiJest />,
+    title: "Jest",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Typescript
+  typescript: {
+    icon: <SiTypescript />,
+    title: "Typescript",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // Interactive prototyping
+  interactivePrototyping: {
+    icon: <RiFlowChart />,
+    title: "Interactive prototyping",
+    description: "",
+    category: categories.design,
+    tags: [tags.technique],
+  },
+  // Scamper
+  scamper: {
+    icon: <FaLightbulb />,
+    title: "SCAMPER",
+    description: "",
+    category: categories.design,
+    tags: [tags.technique],
+  },
+  // Mind mapping
+  mindMapping: {
+    icon: <RiMindMap />,
+    title: "Mind mapping",
+    description: "",
+    category: categories.design,
+    tags: [tags.technique],
+  },
+  // Norman's principles of design
+  normanDesign: {
+    icon: <BsDoorOpenFill />,
+    title: "Norman's principles of design",
+    description: "",
+    category: categories.design,
+    tags: [tags.knowledge],
+  },
+  // Gestalt principles
+  gestaltPrinciples: {
+    icon: <MdWorkspaces />,
+    title: "Principles of gestalt",
+    description: "",
+    category: categories.design,
+    tags: [tags.knowledge],
+  },
+  // Shneiderman's golden rules
+  shneidermanRules: {
+    icon: <AiFillGold />,
+    title: "Shneiderman's 8 golden rules",
+    description: "",
+    category: categories.design,
+    tags: [tags.knowledge],
+  },
+  // sockets
+  sockets: {
+    icon: <AiFillApi />,
+    title: "Sockets",
+    description: "",
+    category: categories.development,
+    tags: [tags.technique, tags.aquainted],
+  },
+  serverless: {
+    icon: <SiServerless />,
+    title: "Serverless architecture",
+    description: "",
+    category: categories.development,
+    tags: [tags.technique, tags.aquainted],
+  },
+  architecture: {
+    icon: <FaBuilding />,
+    title: "Scalable architecture",
+    description: "",
+    category: categories.development,
+    tags: [tags.knowledge],
+  },
+  bigO: {
+    icon: <CgPerformance />,
+    title: "Big O performance",
+    description: "",
+    category: categories.development,
+    tags: [tags.knowledge],
+  },
+  // aws
+  aws: {
+    icon: <FaAws />,
+    title: "AWS",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // cypress
+  cypress: {
+    icon: <SiCypress />,
+    title: "Cypress",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // typography
+  typography: {
+    icon: <RiFontSize2 />,
+    title: "Typographic design",
+    description: "",
+    category: categories.design,
+    tags: [tags.knowledge],
+  },
+  // mockplus
+  mockplus: {
+    icon: <RxFrame />,
+    title: "Mockplus",
+    description: "",
+    category: categories.design,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // premiere
+  premiere: {
+    icon: <SiAdobepremierepro />,
+    title: "Premiere",
+    description: "",
+    category: categories.design,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // inDesign
+  inDesign: {
+    icon: <SiAdobeindesign />,
+    title: "inDesign",
+    description: "",
+    category: categories.design,
+    tags: [tags.tool, tags.aquainted],
+  },
+  // sass
+  sass: {
+    icon: <FaSass />,
+    title: "Sass",
+    description: "",
+    category: categories.development,
+    tags: [tags.tool, tags.aquainted],
+  },
+  creativity: {
+    icon: <FaLightbulb />,
+    title: "Creativity",
+    description: "",
+    category: categories.personal,
+    tags: [tags.technique],
+  },
+  problemSolving: {
+    icon: <MdAutoFixHigh />,
+    title: "Problem Solving",
+    description: "",
+    category: categories.personal,
+    tags: [tags.technique],
+  },
+  communication: {
+    icon: <AiFillMessage />,
+    title: "Communication",
+    description: "",
+    category: categories.personal,
+    tags: [tags.tool],
+  },
+  teamwork: {
+    icon: <MdGroups />,
+    title: "Teamwork",
+    description: "",
+    category: categories.personal,
+    tags: [tags.tool],
+  },
+  curiousity: {
+    icon: <BsFillPatchQuestionFill />,
+    title: "Curiosity",
+    description: "",
+    category: categories.personal,
     tags: [tags.tool],
   },
 }
