@@ -1,3 +1,21 @@
+:root {
+  --lighter-shade: rgba(0, 0, 0, 0.1);
+
+  --shade: rgba(0, 0, 0, 0.4);
+
+  --darker-shade: rgba(0, 0, 0, 0.5);
+
+  --lighter-tint: rgba(255, 255, 255, 0.1);
+
+  --tint: rgba(255, 255, 255, 0.2);
+
+  --transition-duration-shortest: 150ms;
+  --transition-duration-shorter: 200ms;
+  --transition-duration-short: 250ms;
+  --transition-duration-standard: 300ms;
+  --transition-duration-long: 400ms;
+}
+
 body {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -146,6 +164,10 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
+  #sideNav .navbar-collapse .navbar-nav .nav-item:hover {
+    cursor: pointer;
+  }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
@@ -199,6 +221,19 @@ section.resume-section .resume-item .resume-date {
 }
 .green {
   color: #58682d;
+}
+
+.orange-bg {
+  background-color: #bd5d38;
+}
+.gray-bg {
+  background-color: #7d8491;
+}
+.blue-bg {
+  background-color: #41769b;
+}
+.green-bg {
+  background-color: #58682d;
 }
 #hi {
   line-height: 2.5rem !important;
@@ -337,14 +372,14 @@ hr.seperator {
   content: "";
   position: absolute;
   z-index: 0;
-  top: 4%;
-  left: 2%;
-  right: 2%;
-  bottom: 4%;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
   background: repeating-linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4) 4px,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3) 4px,
     transparent 4px,
     transparent 6px
   );
@@ -352,6 +387,7 @@ hr.seperator {
 }
 .striped-background {
   position: relative;
+  box-sizing: content-box;
 }
 .striped-background * {
   position: relative;
@@ -366,4 +402,63 @@ hr.seperator {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.activePointer:hover {
+  cursor: pointer;
+}
+.hoverShadow {
+  transition: filter var(--transition-duration-shortest);
+}
+.hoverShadow:hover {
+  filter: drop-shadow(0px 0.2rem 0.2rem rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+}
+.hoverExtraShadow {
+  transition: filter var(--transition-duration-shortest);
+}
+.hoverExtraShadow:hover {
+  filter: drop-shadow(0px 0.2rem 0.8rem rgba(0, 0, 0, 0.4));
+  box-shadow: inset 0.5rem 0.5rem 0.8rem -0.4rem rgba(255, 239, 169, 0.2) !important;
+  cursor: pointer;
+}
+.hoverLift {
+  transition: transform var(--transition-duration-shortest);
+}
+.hoverLift:hover {
+  transform: translateY(-0.05rem);
+  cursor: pointer;
+}
+
+.clickPressDown {
+  transition: none;
+  transition: transform cubic-bezier(0.4, 0, 0.6, 1)
+    var(--transition-duration-shortest);
+}
+.clickPressDown:active {
+  transform: translateY(0.06rem);
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  /* inset 0px 0px 1rem 0.1rem rgba(255, 255, 255, 0.2) !important; */
+}
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
+.aquainted-button {
+  position: relative;
+  display: inline;
+  margin-right: 1rem;
+}
+.aquainted-button > * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1rem;
+  height: 100%;
+}
+.particles-container {
+  left: -5rem;
+  width: calc(100% + 5rem);
 }

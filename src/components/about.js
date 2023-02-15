@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
+import React from "react"
 import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa"
 import Typist from "react-typist-component"
 
@@ -19,18 +18,11 @@ const typingStatements = [
 ]
 
 export default function About() {
-  const [typingStatus, setTypingStatus] = useState(true)
-  useEffect(() => {
-    // enables Typist to repeat
-    if (!typingStatus) {
-      setTypingStatus(true)
-    }
-  }, [typingStatus])
   return (
     <div className="position-relative">
       <Particles />
       <section
-        className="pnone resume-section p-3 p-lg-5  align-items-center"
+        className="pnone resume-section p-3 p-lg-5 align-items-center"
         id="about"
       >
         <div

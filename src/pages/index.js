@@ -1,5 +1,9 @@
 import React from "react"
-
+// Styling
+import "../styles/custom-bootstrap.scss"
+import "react-tooltip/dist/react-tooltip.css"
+import "animate.css"
+// Components
 import Navbar from "../components/navBar"
 import Head from "../components/head"
 import About from "../components/about"
@@ -9,7 +13,7 @@ import Skills from "../components/skills"
 import Projects from "../components/projects"
 import Interests from "../components/interests"
 import Awards from "../components/awards"
-import "../styles/custom-bootstrap.scss"
+
 const siteSections = [
   { title: "About", anchor: "about", component: <About /> },
   { title: "Experience", anchor: "experience", component: <Experience /> },
@@ -27,13 +31,13 @@ export default function Index() {
       <Navbar siteSections={siteSections} />
       <div className="container-fluid p-0 flex-bg-primary position-relative">
         {siteSections.map((section, index) => (
-          <React.Fragment key={section.anchor} id={section.anchor}>
+          <div key={section.anchor} id={section.anchor}>
             {section.component}
             {/* don't show the hr on the last section */}
             {index !== siteSections.length - 1 && (
               <hr className="m-0 seperator" />
             )}
-          </React.Fragment>
+          </div>
         ))}
       </div>
     </>
