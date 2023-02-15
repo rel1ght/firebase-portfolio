@@ -16,9 +16,10 @@ export default function Navbar({ siteSections }) {
     >
       <ScrollLink
         smooth="easeInOutQuint"
-        offset={-70}
+        // offset={-70}
         duration={1000}
         to="about"
+        isDynamic
         className="navbar-brand js-scroll-trigger"
       >
         <span className="d-block d-lg-none">Tyler Manion</span>
@@ -48,13 +49,15 @@ export default function Navbar({ siteSections }) {
           {siteSections.map((section) => (
             <li key={section.anchor} className="nav-item">
               <ScrollLink
+                isDynamic
                 currentClassName="is-current"
-                className="nav-link"
+                className="nav-link hoverShadow clickPressDown"
                 to={section.anchor}
                 spy={true}
                 smooth="easeInOutQuint"
-                offset={-70}
-                duration={1000}
+                offset={-100}
+                duration={1500}
+                // spyThrottle={500}
                 onClick={handleClick}
               >
                 {section.title}
