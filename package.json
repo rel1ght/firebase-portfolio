@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@popperjs/core": "*",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.2",
     "gatsby": "^5.6.0",
     "gatsby-plugin-image": "*",
@@ -32,6 +33,7 @@
     "postcss": "^8.4.21",
     "react": "*",
     "react-awesome-slider": "*",
+    "react-click-away-listener": "^2.2.2",
     "react-dom": "^18.2.0",
     "react-helmet": "*",
     "react-icons": "*",
@@ -39,6 +41,7 @@
     "react-responsive": "*",
     "react-ripples": "*",
     "react-scroll": "^1.8.9",
+    "react-tooltip": "^5.7.5",
     "react-typist-component": "^1.0.5",
     "sass": "^1.58.1",
     "tsparticles": "^2.9.3"

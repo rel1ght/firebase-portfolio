@@ -1,6 +1,5 @@
 import React, { useCallback } from "react"
 import ReactParticles from "react-particles"
-import particlesConfig from "../config/particlesConfig.json"
 import { loadFull } from "tsparticles"
 
 export default function Particles() {
@@ -16,7 +15,7 @@ export default function Particles() {
   }, [])
 
   return (
-    <div className="pauto p-0 d-none d-lg-block position-absolute container-fluid h-100">
+    <div className="pauto p-0 m-0 d-none d-lg-block position-absolute container-fluid h-100 particles-container">
       <ReactParticles
         loaded={particlesLoaded}
         init={particlesInit}
@@ -40,7 +39,7 @@ const configObj = {
       },
     },
     color: {
-      value: "#ffffff",
+      value: "#282a36",
     },
     shape: {
       type: "circle",
@@ -48,17 +47,9 @@ const configObj = {
         width: 0,
         color: "#000000",
       },
-      polygon: {
-        nb_sides: 5,
-      },
-      image: {
-        src: "img/github.svg",
-        width: 100,
-        height: 100,
-      },
     },
     opacity: {
-      value: 0.5,
+      value: 1,
       random: false,
       anim: {
         enable: false,
@@ -68,25 +59,25 @@ const configObj = {
       },
     },
     size: {
-      value: 3,
+      value: 200,
       random: true,
       anim: {
-        enable: false,
-        speed: 40,
-        size_min: 0.1,
+        enable: true,
+        speed: 10,
+        size_min: 5,
         sync: false,
       },
     },
     line_linked: {
-      enable: true,
+      enable: false,
       distance: 160,
-      color: "#ffffff",
-      opacity: 0.4,
+      color: "#282a36",
+      opacity: 1,
       width: 1,
     },
     move: {
       enable: true,
-      speed: 2,
+      speed: 0.25,
       direction: "none",
       random: false,
       straight: false,
