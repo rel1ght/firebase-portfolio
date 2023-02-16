@@ -6,6 +6,9 @@ import FenceContent from "./content/fenceContent"
 import YourOmahaContent from "./content/yourOmahaContent"
 import DeepictContent from "./content/deepictContent"
 import MsgContent from "./content/msgContent"
+import LeadsContent from "./content/leadsContent"
+import SakiContent from "./content/sakiContent"
+import PaveContent from "./content/paveContent"
 import WorkContext from "./context"
 function WorkRow() {
   const [currentContent, setCurrentContent] = useState("")
@@ -33,11 +36,8 @@ function WorkRow() {
       } else {
         setContentExpanded(false)
         setActiveThumbnail("")
-        console.log("same click")
-        console.log("event: ", e)
       }
     }
-    console.log("contentExpanded: ", contentExpanded)
   }
   const contextValues = {
     thumbnailClick,
@@ -52,31 +52,23 @@ function WorkRow() {
         <div className="row justify-content-around">
           <div className="col-3">
             <WorkThumb
-              src="./img/deepictthumbnail.png"
-              title="Deepict"
-              content={<DeepictContent />}
+              src="./img/leadsthumbnail.jpg"
+              title="LEADS"
+              content={<LeadsContent />}
             />
           </div>
           <div className="col-3">
             <WorkThumb
-              src="./img/mountainskygoldensthumbnail.png"
-              title="Mountain Sky Goldens"
-              content={<MsgContent />}
+              src="./img/sakithumbnail.jpg"
+              title="SAKI Dashboard"
+              content={<SakiContent />}
             />
           </div>
           <div className="col-3 ">
             <WorkThumb
-              src="./img/fencethumbnail.png"
-              title="Fence"
-              content={<FenceContent />}
-            />
-          </div>
-
-          <div className="col-3">
-            <WorkThumb
-              src="./img/youromahathumbnail.jpg"
-              title="Your Omaha"
-              content={<YourOmahaContent />}
+              src="./img/pavethumbnail.jpg"
+              title="PAVE"
+              content={<PaveContent />}
             />
           </div>
           <div className="col-3">
