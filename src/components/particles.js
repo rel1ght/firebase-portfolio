@@ -28,15 +28,89 @@ export default function Particles() {
   )
 }
 
+const particleConfig = {
+  size: {
+    value: { max: 220, min: 20 },
+    // random: true,
+    animation: {
+      enable: true,
+      speed: 3,
+      sync: false,
+    },
+    // anim: {
+    //   enable: true,
+    //   speed: 10,
+    //   size_min: 5,
+    //   sync: false,
+    // },
+  },
+  move: {
+    enable: true,
+    speed: 0.25,
+    direction: "none",
+    random: false,
+    straight: false,
+    out_mode: "bounce",
+    bounce: false,
+    attract: {
+      enable: false,
+      rotateX: 600,
+      rotateY: 1200,
+    },
+  },
+}
+
+function sideParticle(x, y, size = 100) {
+  return {
+    options: {
+      move: {
+        enable: true,
+        speed: 0.01,
+        direction: "none",
+        random: false,
+        straight: false,
+        out_mode: "bounce",
+        bounce: true,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+      size: {
+        value: { min: 80, max: size + 40 },
+        // random: false,
+        animation: {
+          enable: true,
+          speed: 5,
+          startValue: size,
+          sync: false,
+        },
+      },
+    },
+    position: { x, y },
+  }
+}
+
+function randomParticles(amount) {
+  const randomParticlesArray = []
+  for (let i = 0; i < amount; i++) {
+    randomParticlesArray.push({ options: particleConfig })
+  }
+  return randomParticlesArray
+}
+
 const configObj = {
   fullScreen: { enable: false, zIndex: 0 },
+  reduceDuplicates: true,
   particles: {
     number: {
-      value: 80,
-      density: {
-        enable: true,
-        value_area: 1260.3387160299326,
-      },
+      value: 0,
+      // density: {
+      //   enable: true,
+      //   height: 1920,
+      //   width: 1080,
+      // },
     },
     color: {
       value: "#282a36",
@@ -90,15 +164,31 @@ const configObj = {
       },
     },
   },
+  zLayers: 10,
+  manualParticles: [
+    sideParticle(-20, -60, 120),
+    sideParticle(-5, -5),
+    sideParticle(-15, 0),
+    sideParticle(-50, 11, 80),
+    sideParticle(-70, 35, 100),
+    sideParticle(-8, 45, 80),
+    sideParticle(-10, 55),
+    sideParticle(-10, 70, 60),
+    sideParticle(-30, 80, 65),
+    sideParticle(-50, 90, 110),
+    sideParticle(-45, 100, 150),
+    ...randomParticles(70),
+  ],
   interactivity: {
-    detect_on: "canvas",
+    detect_on: "window",
     events: {
       onhover: {
         enable: true,
-        mode: "repulse",
+        mode: "none",
+        parallax: { enable: true, force: 10000, smooth: 2 },
       },
       onclick: {
-        enable: true,
+        enable: false,
         mode: "push",
       },
       resize: true,
@@ -110,16 +200,21 @@ const configObj = {
           opacity: 1,
         },
       },
+      connect: { distance: 200, radius: 200 },
+
+      bounce: {
+        distance: 200,
+      },
       bubble: {
-        distance: 400,
-        size: 40,
-        duration: 2,
-        opacity: 8,
-        speed: 3,
+        distance: 100,
+        // size: 30,
+        duration: 9,
+        opacity: 0.01,
+        // speed: 0.0001,
       },
       repulse: {
         distance: 100,
-        duration: 0.4,
+        duration: 1,
       },
       push: {
         particles_nb: 4,
