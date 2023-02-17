@@ -311,7 +311,6 @@ hr.seperator {
 
 .workThumbnail:hover {
   filter: none;
-  transform: translateY(0.2rem);
 }
 .workArrow {
   height: 100%;

@@ -22,7 +22,7 @@ function WorkThumb({ src, title, content }) {
           src={src}
           ref={ref}
           onClick={(e) => thumbnailClick(e, ref, content)}
-          className={`workThumbnail rounded img-fluid mb-2 ${
+          className={`workThumbnail hoverLift hoverShadow clickPressDown rounded img-fluid mb-2 ${
             ref.current === activeThumbnail ? "activeThumbnail" : ""
           }`}
         ></img>
