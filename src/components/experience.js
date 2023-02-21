@@ -35,11 +35,8 @@ const htiLabsExperience = {
 export default function Experience() {
   return (
     <>
-      <section
-        className="resume-section p-3 p-lg-5 d-flex justify-content-center flex-bg-primary"
-        id="experience"
-      >
-        <div className="w-100">
+      <section className="resume-section p-3 p-lg-5 d-flex justify-content-center flex-bg-primary">
+        <div id="experience" className="w-100">
           <h2 className="mb-5 text-primary">Experience</h2>
           <ExperienceItem {...htiLabsExperience} />
           <ExperienceItem {...collegeOfEdExperience} />
@@ -62,7 +59,7 @@ function ExperienceItem({
         <h3 className="mb-0 orange">{positionName}</h3>
         <div className="subheading mb-3 green">{employerName}</div>
         <ul>
-          {bulletPoints.map(bulletPoint => (
+          {bulletPoints.map((bulletPoint) => (
             <li key={JSON.stringify(bulletPoint)}>{bulletPoint}</li>
           ))}
         </ul>

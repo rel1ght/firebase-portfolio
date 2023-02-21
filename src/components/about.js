@@ -1,7 +1,6 @@
 import React from "react"
 import { FaLinkedinIn, FaGithub, FaFileAlt } from "react-icons/fa"
 import Typist from "react-typist-component"
-
 import Particles from "./particles"
 import calculateAge from "../utils/calculateAge"
 
@@ -22,8 +21,8 @@ export default function About() {
     <div className="position-relative">
       <Particles />
       <section
-        className="pnone resume-section p-3 p-lg-5 align-items-center"
         id="about"
+        className="pnone resume-section p-3 p-lg-5 align-items-center"
       >
         <div
           className="w-100 position-relative"

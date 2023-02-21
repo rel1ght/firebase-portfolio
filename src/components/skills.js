@@ -27,8 +27,8 @@ export default function Skills() {
 
   return (
     <>
-      <section className="resume-section p-3 p-lg-5 d-flex" id="skills">
-        <div className="w-100">
+      <section className="resume-section p-3 p-lg-5 d-flex">
+        <div className="w-100" id="skills">
           <h2 className="mb-5 text-primary">Skills</h2>
 
           <FilterBar

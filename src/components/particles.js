@@ -166,6 +166,7 @@ const configObj = {
   },
   zLayers: 10,
   manualParticles: [
+    sideParticle(-40, -100, 20),
     sideParticle(-20, -60, 120),
     sideParticle(-5, -5),
     sideParticle(-15, 0),

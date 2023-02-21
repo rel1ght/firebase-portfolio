@@ -4,11 +4,8 @@ import { Link } from "gatsby"
 export default function Interests() {
   return (
     <>
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
-      >
-        <div className="w-100">
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center">
+        <div className="w-100" id="interests">
           <h2 className="mb-5 text-primary">Interests</h2>
           <ArtInterest />
           <br />
