@@ -455,12 +455,21 @@ hr.seperator {
 }
 .aquainted-button > * {
   position: absolute;
-  top: 0;
+  top: -10px;
   bottom: 0;
-  right: -1rem;
+  right: calc(-1rem + -10px);
   height: 100%;
+  border: 10px solid transparent;
+  box-sizing: content-box;
 }
 .particles-container {
   left: -5rem;
   width: calc(100% + 5rem);
+}
+
+.tooltip {
+  background: #282a36 !important;
+  font-size: 0.7rem;
+  max-width: 20rem;
+  line-height: 1rem;
 }

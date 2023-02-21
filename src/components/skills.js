@@ -133,19 +133,11 @@ function FilterButton({ itemKey, setItem, text, items, color = "light" }) {
             <Tooltip
               positionStrategy="fixed"
               anchorId="aquaintedTooltip"
-              variant="light"
               place="right"
               offset={30}
+              className="tooltip"
             >
-              <div
-                style={{
-                  maxWidth: "20rem",
-                  fontSize: ".7rem",
-                  lineHeight: "1rem",
-                }}
-              >
-                skills I'm familiar with but haven't used as much or as recently
-              </div>
+              Skills I'm familiar with but haven't used as much or as recently
             </Tooltip>
             <div className="aquainted-button" id="aquaintedTooltip">
               <FaQuestionCircle />
@@ -243,8 +235,8 @@ function Skill({ skillKey }) {
       <Tooltip
         positionStrategy="fixed"
         anchorId={skillKey}
-        variant="light"
         isOpen={tooltipIsOpen}
+        className="tooltip"
       >
         {skill.description}
       </Tooltip>
