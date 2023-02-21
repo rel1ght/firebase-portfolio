@@ -16,7 +16,7 @@ function YourOmahaContent() {
           </div>
         </div>
         <div className="row">
-          <div className="mx-auto mb-2 col-12 col-md-10">
+          <div className="mx-auto mb-2 col-12 col-md-10 slider-contain">
             <AwesomeSlider className="mb-5">
               <div data-src="./img/youromaha1.jpg" />
               <div data-src="./img/youromaha2.jpg" />

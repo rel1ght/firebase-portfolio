@@ -17,7 +17,7 @@ function FenceContent() {
           </div>
         </div>
         <div className="row">
-          <div className="mx-auto mb-2 col-12 col-md-10">
+          <div className="mx-auto mb-2 col-12 col-md-10 slider-contain">
             <AwesomeSlider className="mb-5">
               <div data-src="./img/fencemockup2.jpg" />
               <div data-src="./img/fencemockup1.jpg" />
@@ -68,6 +68,7 @@ function FenceContent() {
                     <a
                       target="_blank"
                       href="https://www.boredpanda.com/people-caught-copying-plagiarism-stealing-art-knockoffs/"
+                      rel="noreferrer"
                     >
                       large companies.
                     </a>

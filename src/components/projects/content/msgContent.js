@@ -17,7 +17,7 @@ function msgContent() {
           </div>
         </div>
         <div className="row">
-          <div className="mx-auto mb-2 col-12 col-md-10">
+          <div className="mx-auto mb-2 col-12 col-md-10 slider-contain">
             <AwesomeSlider className="mb-5">
               <div data-src="./img/msghomepage.jpg" />
               <div data-src="./img/msggallery.jpg" />
@@ -35,6 +35,7 @@ function msgContent() {
                 className="d-inline lead"
                 target="_blank"
                 href="https://mountainskygoldens.com"
+                rel="noreferrer"
               >
                 Mountainskygoldens.com
               </a>
@@ -54,6 +55,7 @@ function msgContent() {
                   className="d-inline lead"
                   target="_blank"
                   href="https://jamstack.org/"
+                  rel="noreferrer"
                 >
                   J.A.M. (Javascript, APIs, and Markup)
                 </a>{" "}

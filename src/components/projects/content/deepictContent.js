@@ -16,7 +16,7 @@ function DeepictContent() {
           </div>
         </div>
         <div className="row">
-          <div className="mx-auto mb-2 col-12 col-md-10">
+          <div className="mx-auto mb-2 col-12 col-md-10 slider-contain">
             <AwesomeSlider className="mb-5">
               <div data-src="./img/deepicttech.jpg" />
               <div data-src="./img/deepictpup1.jpg" />
@@ -362,7 +362,7 @@ function DeepictContent() {
           </div>
           <div className="row mt-3 justify-content-center mb-4">
             <Ripples className="rounded">
-              <a target="_blank" href="https://deepict.xyz">
+              <a target="_blank" href="https://deepict.xyz" rel="noreferrer">
                 <button className="btn btn-lg mx-auto btn-outline-dark blue">
                   deepict.yxz
                   <FaExternalLinkAlt className="ml-1 pl-1" />
