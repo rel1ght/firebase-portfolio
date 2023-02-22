@@ -492,3 +492,6 @@ hr.seperator {
   > .awssld__content {
   background: transparent;
 }
+.cursor-regular {
+  cursor: default !important;
+}

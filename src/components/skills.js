@@ -246,9 +246,9 @@ function Skill({ skillKey }) {
           onMouseEnter={handleHoverIn}
           onMouseLeave={handleHoverOut}
           id={skillKey}
-          className={`rounded-pill hoverExtraShadow clickPressDown ${bgColor} ${
+          className={`rounded-pill hoverExtraShadow ${bgColor} ${
             striped ? "striped-background" : ""
-          } mb-4 mr-2 activePointer`}
+          } mb-4 mr-2  cursor-regular`}
         >
           <div className="d-inline-flex flex-column">
             <div
