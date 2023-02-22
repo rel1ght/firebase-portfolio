@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 // Styling
 import "../styles/custom-bootstrap.scss"
 import "react-tooltip/dist/react-tooltip.css"
@@ -7,8 +7,11 @@ import "animate.css"
 import Navbar from "../components/navBar"
 import Head from "../components/head"
 import { siteSections } from "../config/siteSections"
-
+import firebaseSetup from "../config/firebaseSetup"
 export default function Index() {
+  useEffect(() => {
+    firebaseSetup()
+  }, [])
   return (
     <>
       <Head />

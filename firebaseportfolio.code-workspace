@@ -20,6 +20,7 @@
         ]
       }
     ],
-    "autoHide.autoHidePanel": false
+    "autoHide.autoHidePanel": false,
+    "eslint.workingDirectories": [{ "mode": "auto" }]
   }
 }
