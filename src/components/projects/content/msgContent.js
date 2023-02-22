@@ -20,7 +20,8 @@ function msgContent() {
           <div className="mx-auto mb-2 col-12 col-md-10 slider-contain">
             <AwesomeSlider className="mb-5">
               <div data-src="./img/msghomepage.jpg" />
-              <div data-src="./img/msggallery.jpg" />
+              <div data-src="./img/msg-gallery.gif" />
+              <div data-src="./img/msg-quotes.jpg" />
               <div data-src="./img/msginstagram.jpg" />
               <div data-src="./img/msgadopt.jpg" />
               <div data-src="./img/msgpayment.jpg" />
@@ -42,71 +43,55 @@ function msgContent() {
               <p className="d-inline">
                 {" "}
                 was created in 2020 for a hobby breeder located in southern
-                Idaho. They had their first litter of 8 puppies in the spring of
-                2020, and all of the puppies had adoptions pending within the
-                first month! Hopefully it'll be the first batch of many happy
-                adoptions to come.
-              </p>
-
-              <p className="mt-2">
-                Everything from the branding, logo, design, and code, was all
-                created by me. I built the site on a{" "}
-                <a
-                  className="d-inline lead"
-                  target="_blank"
-                  href="https://jamstack.org/"
-                  rel="noreferrer"
-                >
-                  J.A.M. (Javascript, APIs, and Markup)
-                </a>{" "}
-                stack. It represents a shift away from traditional CMS and
-                hosting infrastructure, instead favoring lightweight, secure,
-                and highly scalable applications. The site is packaged using
-                Webpack, and styled using a customized version of Bootstrap.
-                Everything is prerendered and blazing fast.
+                Idaho. I was hired to build and maintain the site, branding, ad
+                campaign, and CMS integration.
               </p>
               <p className="mt-2">
-                The site is hosted on Github Pages. Github Pages provides a top
-                notch CDN and built-in optimizations all for free. The only
-                recurring cost that the client has to pay is for domain
-                registration.
+                I worked with the client to figure out what their needs were. It
+                was important that they had the ability to update the site as
+                new litters arrived, so a user-friendly way to do so was a must.
               </p>
             </div>
           </div>
           <div className="row mt-2">
-            <div className="col-12 col-lg-6">
+            <div className="col-12">
               <p>
-                Any logic that would normally be handled server-side, such as
-                form submissions and payment, is instead processed by 3rd party
-                A.P.I.s. At the client's traffic level, it incurs no extra cost,
-                and it saves on hosting. It's also inherently scalable, so if
-                traffic were to spike the A.P.I.s would be able to respond
-                without intervention.
-              </p>
-              <p>
-                The section I'm most proud of is the custom Instagram
-                integration. It collects the six most recent posts of the
-                client's account and displays them in a mobile-friendly and
-                aesthically pleasing way.
+                To do so, I used Gatsby JS for the frontend, Contentful CMS for
+                the database, and GraphQL to connect the two. Through Contentful
+                I set up a relational database to make things easy to display,
+                and easy to add to by the owners. It was important to make
+                updating the site not feel scary or overwhelming, so I created
+                custom forms for editing everything from puppies to pages, that
+                included constraints and descriptions for every field. With that
+                and a modular drag-and-drop interface, plus a way to preview
+                changes before making them public, the site owner was confident
+                enough to make changes whenever they wanted.
               </p>
             </div>
-            <div className="col-12 col-lg-6 justify-content-center">
-              <img
-                className="rounded img-fluid mx-auto d-flex"
-                src="./img/msgapiexample.png"
-              ></img>
+            <div className="col-12 row justify-content-around">
+              <div className="col-12 col-md-6 col-lg-4">
+                <p className="lead text-primary text-center">Contentful</p>
+                <img
+                  className="img-fluid rounded mt-n2"
+                  src="./img/msg-contentful-website-contentful.png"
+                />
+              </div>
+              <div className="col-12 col-md-6 cold-lg-8">
+                <p className="lead text-primary text-center">Website</p>
+                <img
+                  className="img-fluid rounded mt-n2"
+                  src="./img/msg-contentful-website-site.png"
+                />
+              </div>
             </div>
           </div>
           <div className="row mt-2">
             <div className="col">
               <p>
-                This project taught me a lot of new skills, and helped me hone
-                some I already had. I was used to working in a full stack
-                environment, where I have access to server-side processing to
-                handle things like form submissions, payment, and automatic
-                emailing. Trying to create a successful site that could
-                accomplish all of that without a backend, all for free, was an
-                interesting challenge.
+                The owners have since successfully sold multiple litters, and
+                are incredibly happy with their website. They also mentioned
+                that they've gotten compliments on how nice the site looks and
+                feels, which is great to hear!
               </p>
             </div>
           </div>
