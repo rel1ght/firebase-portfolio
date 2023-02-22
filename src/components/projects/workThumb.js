@@ -9,7 +9,7 @@ function WorkThumb({ src, title, content }) {
   const ref = React.useRef(null)
   useEffect(() => {
     if (!isTabletOrMobile) {
-      if (title === "Deepict") {
+      if (title === "SAKI Dashboard") {
         thumbnailClick(null, ref, content)
       }
     }

@@ -16,12 +16,12 @@ function WorkContent({ content }) {
   }
   return (
     <>
-      <div className={`interiorExpandedContent p-1 p-lg-4 w-100`}>
+      <div className={`interiorExpandedContent p-1 p-lg-4 mt-3 w-100`}>
         <div className="row negativeMargin">
           <div className="col-auto ml-auto">
             <Ripples className="rounded">
               <button
-                onClick={e => {
+                onClick={(e) => {
                   closeClick(e)
                 }}
                 className="btn btn-outline-secondary closeWorkContent align-items-center"

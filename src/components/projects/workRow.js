@@ -24,9 +24,6 @@ function WorkRow() {
       setCurrentContent(content)
       //open content section
       setContentExpanded(true)
-      console.log("new click")
-      console.log("event: ", e)
-      console.log("ref: ", ref)
     }
     //click was on previously clicked thumbnail
     else {
@@ -50,42 +47,42 @@ function WorkRow() {
     <>
       <WorkContext.Provider value={{ contextValues }}>
         <div className="row justify-content-around">
-          <div className="col-3">
+          <div className="col-3 col-xl-2">
             <WorkThumb
               src="./img/leadsthumbnail.jpg"
               title="LEADS"
               content={<LeadsContent />}
             />
           </div>
-          <div className="col-3">
+          <div className="col-3 col-xl-2">
             <WorkThumb
               src="./img/sakithumbnail.jpg"
               title="SAKI Dashboard"
               content={<SakiContent />}
             />
           </div>
-          <div className="col-3 ">
+          {/* <div className="col-3 ">
             <WorkThumb
               src="./img/pavethumbnail.jpg"
               title="PAVE"
               content={<PaveContent />}
             />
-          </div>
-          <div className="col-3">
+          </div> */}
+          <div className="col-3 col-xl-2">
             <WorkThumb
               src="./img/deepictthumbnail.png"
               title="Deepict"
               content={<DeepictContent />}
             />
           </div>
-          <div className="col-3">
+          <div className="col-3 col-xl-2">
             <WorkThumb
               src="./img/mountainskygoldensthumbnail.png"
               title="Mountain Sky Goldens"
               content={<MsgContent />}
             />
           </div>
-          <div className="col-3 ">
+          <div className="col-3 col-xl-2">
             <WorkThumb
               src="./img/fencethumbnail.png"
               title="Fence"
@@ -93,7 +90,7 @@ function WorkRow() {
             />
           </div>
 
-          <div className="col-3">
+          <div className="col-3 col-xl-2">
             <WorkThumb
               src="./img/youromahathumbnail.jpg"
               title="Your Omaha"
