@@ -25,14 +25,14 @@ function ArtInterest() {
         alt="Responsive image"
       />
       <p>
-        I love creating. Drawing, painting, sculpting, building, coding. All
-        tools I use to scratch an itch in my brain that makes me want to make
-        something. I always carry a sketchpad with me that houses ideas and
-        doodles side-by-side. At home I have a treasure trove of art supplies
-        built up over years of accumulation. I rummage through it at least once
-        a week to find the perfect implement for my latest project. It’s a mess,
-        but I like it that way. More often than not I’ll get stabbed by the
-        pencil I need in my haste to grab the one I was looking for.{" "}
+        I love creating. Drawing, painting, sculpting, building, coding. All are
+        means to satisfy my unending urge to make something. I always carry a
+        sketchpad with me that houses ideas and doodles side-by-side. At home I
+        have a treasure trove of crafting supplies built up over years of
+        projects. I rummage through it at least once a week to find the perfect
+        medium for my latest idea. I've melted gold, chiseled concrete, carved
+        wood, soldered wires, and I'm always looking for a new tool or technique
+        to add to my kit.
       </p>
     </>
   )
@@ -55,7 +55,7 @@ function GenArtInterest() {
         concrete at the same time. Generative art is the process of creating art
         from code, and that’s art in and of itself. My senior capstone is
         focused on exploring the relationship between the process and the
-        product, and you can read more about it in the work section!
+        product, and you can read more about it in the project section!
       </p>
     </>
   )

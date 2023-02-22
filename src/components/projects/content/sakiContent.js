@@ -127,7 +127,7 @@ export default function SakiContent() {
               <div className="mb-4">
                 <h5 className="orange">
                   Goal 2: Include password-protected content for commitee
-                  members (A grant requirement)
+                  members (a grant requirement)
                 </h5>
                 <div className="row justify-content-between">
                   <div className="col-12 col-md-6">

@@ -17,12 +17,12 @@ export default function Awards() {
                 IRB Certification
               </div>
             </li>
-            <li>
+            {/* <li>
               <div className="d-inline-flex align-items-top my-2">
                 <FaTrophy className="text-yellow trophy mt-1 mr-2"></FaTrophy>
                 Dean's List Fall 2014 - Fall 2016, Spring 2020
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="d-inline-flex align-items-top my-2">
                 <FaTrophy className="text-yellow trophy mt-1 mr-2"></FaTrophy>
