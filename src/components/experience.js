@@ -7,7 +7,7 @@ const collegeOfEdExperience = {
   positionName: "Office of Technology Student Worker",
   employerName: "College of Education at U.N.O.",
   bulletPoints: [
-    "Lead a redesign of a custom operating system and deployment methods for hundreds of workstations",
+    "Led a redesign of a custom operating system and deployment methods for hundreds of workstations",
     "Researched experimental applications of virtual reality used in learning environments",
     "Designed web and print graphics for college-wide communications",
     "Wrote programs to automate repetitive tasks and reduce human error",
