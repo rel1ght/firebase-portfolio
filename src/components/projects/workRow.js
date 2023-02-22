@@ -104,16 +104,6 @@ function WorkRow() {
           className={`workContentRow row ${contentExpanded ? "" : "d-none"}`}
         >
           <WorkContent content={currentContent} />
-
-          {/* <button
-            type="button"
-            className="btn m-3 ml-auto blue-bg hoverLift hoverShadow"
-          >
-            Back to Projects{" "}
-            <div className="d-inline ml-1">
-              <SlArrowUp className="pb-1" />
-            </div>
-          </button> */}
         </div>
       </WorkContext.Provider>
     </>
