@@ -30,12 +30,10 @@ function YourOmahaContent() {
         <div className="workContentBody mt-2 container">
           <div className="row">
             <div className="col">
-              <span className="lead">The Your Omaha App</span>
               <p className="d-inline">
-                {" "}
-                was designed in 2019 as a case study in UX design. It was
-                created by me and 3 other individuals as we worked to address
-                issues in our local community.
+                The Your Omaha App was designed in 2019 as a case study in UX
+                design. It was created by me and 3 other individuals as we
+                worked to address issues in our local community.
               </p>
               <h5 className="orange mt-3">The Premise:</h5>
               <p>

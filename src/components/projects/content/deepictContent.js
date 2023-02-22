@@ -3,6 +3,7 @@ import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
 import { FaDownload, FaExternalLinkAlt } from "react-icons/fa"
 import Ripples from "react-ripples"
+
 function DeepictContent() {
   return (
     <>
@@ -49,17 +50,16 @@ function DeepictContent() {
               ></iframe>
             </div>
             <div className="col">
-              <span className="lead">Deepict was envisioned</span>
-              <p className="d-inline">
-                {" "}
-                in 2019 as the capstone for my I.T. Innovation degree. I was
-                tasked with first identifying an innovation to solve a problem,
-                and then wrapping a business plan around it. After the idea and
-                business were fleshed out, I developed a working prototype to
-                illustrate the core functionality. The year-long capstone was
-                split into two parts, with the ideation and business in the
-                first half, and the development in the second. Before covering
-                each half, here's the basic pitch:
+              <p>
+                Deepict was envisioned in 2019 as the capstone for my I.T.
+                Innovation degree. I was tasked with first identifying an
+                innovation to solve a problem, and then wrapping a business plan
+                around it. After the idea and business were fleshed out, I
+                developed a working prototype to illustrate the core
+                functionality. The year-long capstone was split into two parts,
+                with the ideation and business in the first half, and the
+                development in the second. Before covering each half, here's the
+                basic pitch:
               </p>
               <p className="lead p-3 p-md-5 text-primary">
                 We put up pictures that mean something to us. They're captured

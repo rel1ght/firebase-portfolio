@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
+import { FaExternalLinkAlt } from "react-icons/fa"
 
 function msgContent() {
   return (
@@ -17,6 +18,16 @@ function msgContent() {
           </div>
         </div>
         <div className="row">
+          <div className="row">
+            <div className="col-12 my-2">
+              <h4 className="orange text-center">
+                See the finished site at{" "}
+                <a href="https://omaha-saki.htilabs.org">
+                  mountainskygoldens.com <FaExternalLinkAlt className=" pl-1" />
+                </a>
+              </h4>
+            </div>
+          </div>
           <div className="mx-auto mb-2 col-12 col-md-10 slider-contain">
             <AwesomeSlider className="mb-5">
               <div data-src="./img/msghomepage.jpg" />
@@ -32,19 +43,10 @@ function msgContent() {
         <div className="workContentBody mt-2 container">
           <div className="row">
             <div className="col">
-              <a
-                className="d-inline lead"
-                target="_blank"
-                href="https://mountainskygoldens.com"
-                rel="noreferrer"
-              >
-                Mountainskygoldens.com
-              </a>
-              <p className="d-inline">
-                {" "}
-                was created in 2020 for a hobby breeder located in southern
-                Idaho. I was hired to build and maintain the site, branding, ad
-                campaign, and CMS integration.
+              <p>
+                In 2020 I created a website for a hobby breeder located in
+                southern Idaho. I was hired to build and maintain the site,
+                branding, ad campaign, and CMS integration.
               </p>
               <p className="mt-2">
                 I worked with the client to figure out what their needs were. It

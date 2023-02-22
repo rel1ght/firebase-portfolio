@@ -40,20 +40,19 @@ export default function SakiContent() {
 
         <div className="row">
           <div className="col">
-            <span className="lead">Thousands of sexual assault kits </span>
-            <p className="d-inline">
-              submitted to police have never been tested. They potentially
-              contain D.N.A. of the perpetrator, which not only can help in
-              individual cases, but can also be used to identify serial sexual
-              assaulters. Despite that, due to time, resources, but most of all
-              priorities, police departments across the country have let them
-              pile up, often for years. The Sexual Assault Kit Initiative
-              (SAKI), is a grant program to accelerate the testing of
-              unsubmitted kits. Part of the grant requirements are to include an
-              online public accountability dashboard, in order to document
-              progress and link to resources for victims. HTI Labs agreed to set
-              up and host the site for the City of Omaha, and the responsibility
-              for creating it was assigned to me.
+            <p>
+              Thousands of sexual assault kits submitted to police have never
+              been tested. They potentially contain D.N.A. of the perpetrator,
+              which not only can help in individual cases, but can also be used
+              to identify serial sexual assaulters. Despite that, due to time,
+              resources, but most of all priorities, police departments across
+              the country have let them pile up, often for years. The Sexual
+              Assault Kit Initiative (SAKI), is a grant program to accelerate
+              the testing of unsubmitted kits. Part of the grant requirements
+              are to include an online public accountability dashboard, in order
+              to document progress and link to resources for victims. HTI Labs
+              agreed to set up and host the site for the City of Omaha, and the
+              responsibility for creating it was assigned to me.
             </p>
             <p className="mt-3">
               Due to tight time constraints and other responsibilities, I only

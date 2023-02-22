@@ -15,10 +15,7 @@ export default function PaveContent() {
       <div className="workContentBody mt-2 container">
         <div className="row">
           <div className="col">
-            <span className="lead">
-              Millions of commercial sex ads are posted every day.{" "}
-            </span>
-            <p className="d-inline">
+            <p>
               Some of them, a lot of them, aren't posted by the people they
               advertise. They're posted by a human trafficker, who makes the
               decisions about who their victims see, how often they work, and

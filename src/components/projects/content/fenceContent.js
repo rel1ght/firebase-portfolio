@@ -31,12 +31,10 @@ function FenceContent() {
         <div className="workContentBody mt-2 container">
           <div className="row">
             <div className="col">
-              <span className="lead">Fence was created</span>
-              <p className="d-inline">
-                {" "}
-                in late 2018 as a case study in web design. It set out to
-                address the issues artists face when trying to sell their work
-                online.
+              <p>
+                Fence was created in late 2018 as a case study in web design. It
+                set out to address the issues artists face when trying to sell
+                their work online.
               </p>
               <h5 className="orange mt-3">The Premise:</h5>
               <p>

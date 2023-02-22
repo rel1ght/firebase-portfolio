@@ -17,19 +17,27 @@ export default function LeadsContent() {
       </div>
       <div className="workContentBody mt-2 container">
         <div className="row">
+          <div className="col-12 my-2">
+            <h4 className="orange text-center">
+              Read more about LEADS and HTI Labs at{" "}
+              <a href="https://htilabs.org/leads/">
+                htilabs.org <FaExternalLinkAlt className=" pl-1" />
+              </a>
+            </h4>
+          </div>
+        </div>
+        <div className="row">
           <div className="col">
-            <span className="lead">
-              Millions of commercial sex ads are posted every day.{" "}
-            </span>
-            <p className="d-inline">
-              Some of them, a lot of them, aren't posted by the people they
-              advertise. They're posted by a human trafficker, who makes the
-              decisions about who their victims see, how often they work, and
-              for how much. Often the trafficker is part of a larger operation,
-              that shuffles victims from city to city in order to keep them
-              isolated and dependent. Operations like that take steps to obscure
-              themselves. The problem is, so does every voluntary sex worker.
-              It's dangerous, and not just because it's usually illegal.
+            <p>
+              Millions of commercial sex ads are posted every day. Some of them,
+              a lot of them, aren't posted by the people they advertise. They're
+              posted by a human trafficker, who makes the decisions about who
+              their victims see, how often they work, and for how much. Often
+              the trafficker is part of a larger operation, that shuffles
+              victims from city to city in order to keep them isolated and
+              dependent. Operations like that take steps to obscure themselves.
+              The problem is, so does every voluntary sex worker. It's
+              dangerous, and not just because it's usually illegal.
             </p>
             <p className="mt-3">
               The challenge then is to sift through mountains of intentionally
