@@ -45,8 +45,8 @@ function msgContent() {
             <div className="col">
               <p>
                 In 2020 I created a website for a hobby breeder located in
-                southern Idaho. I was hired to build and maintain the site,
-                branding, ad campaign, and CMS integration.
+                southern Idaho. I was hired to build and maintain the site, logo
+                / branding, ad campaign, and CMS integration.
               </p>
               <p className="mt-2">
                 I worked with the client to figure out what their needs were. It
@@ -71,14 +71,14 @@ function msgContent() {
               </p>
             </div>
             <div className="col-12 row justify-content-around">
-              <div className="col-12 col-md-6 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4 mb-3">
                 <p className="lead text-primary text-center">Contentful</p>
                 <img
                   className="img-fluid rounded mt-n2"
                   src="./img/msg-contentful-website-contentful.png"
                 />
               </div>
-              <div className="col-12 col-md-6 cold-lg-8">
+              <div className="col-12 col-md-6 cold-lg-8 mb-2">
                 <p className="lead text-primary text-center">Website</p>
                 <img
                   className="img-fluid rounded mt-n2"
