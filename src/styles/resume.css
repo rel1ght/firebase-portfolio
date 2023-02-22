@@ -449,6 +449,7 @@ hr.seperator {
   text-shadow: 1px 1px 2px black;
 }
 .aquainted-button {
+  cursor: pointer;
   position: relative;
   display: inline;
   margin-right: 1rem;
@@ -472,6 +473,7 @@ hr.seperator {
   font-size: 0.7rem;
   max-width: 20rem;
   line-height: 1rem;
+  filter: drop-shadow(0px 0.2rem 0.8rem rgba(0, 0, 0, 0.4));
 }
 .slider-contain
   > .awssld
