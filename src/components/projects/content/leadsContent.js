@@ -17,9 +17,11 @@ export default function LeadsContent() {
       </div>
       <div className="workContentBody mt-2 container">
         <div className="row">
-          <div className="col-12 my-2">
+          <div className="col-12 mt-2 mb-4">
             <h4 className="orange text-center">
-              Read more about LEADS and HTI Labs at{" "}
+              I can't include pictures or specifics online, but I'd love to talk
+              about LEADS in person! In the meantime, you can read more about
+              LEADS and HTI Labs at{" "}
               <a href="https://htilabs.org/leads/">
                 htilabs.org <FaExternalLinkAlt className=" pl-1" />
               </a>
@@ -51,12 +53,15 @@ export default function LeadsContent() {
               I was tasked with designing the user interface and developing the
               frontend using React and Material UI. I saw the project through
               initial brainstorming meetings all the way to production release.
-              LEADS is now being used across the country, by organizations like
-              Homeland Security and state taskforces, and has already proven
-              itself a valuable tool in taking down real trafficking operations.
-              It was a monumental undertaking, but the amount of personal growth
-              I experienced as a result, not to mention the satisfaction in
-              making a real-world impact, was well worth it.
+              I used every UX technique I knew, like wireframing, journey
+              mapping, and user testing. I also helped to build advanced
+              features like an interactive network visualization. LEADS is now
+              being used across the country, by organizations like Homeland
+              Security and state taskforces, and has already proven itself a
+              valuable tool in taking down real trafficking operations. It was a
+              monumental undertaking, but the amount of personal growth I
+              experienced as a result, not to mention the satisfaction in making
+              a real-world impact, was well worth it.
             </p>
           </div>
         </div>
