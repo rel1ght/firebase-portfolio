@@ -1,34 +1,29 @@
 import React from "react"
-
-import Header from "../components/header"
+// Styling
+import "../styles/custom-bootstrap.scss"
+import "react-tooltip/dist/react-tooltip.css"
+import "animate.css"
+// Components
+import Navbar from "../components/navBar"
 import Head from "../components/head"
-import About from "../components/about"
-import Experience from "../components/experience"
-import Education from "../components/education"
-import Skills from "../components/skills"
-import Work from "../components/work"
-import Interests from "../components/interests"
-import Awards from "../components/awards"
+import { siteSections } from "../config/siteSections"
 
-export default () => (
-  <>
-    <Head />
-
-    <Header />
-    <div className="container-fluid p-0 flex-bg-primary position-relative">
-      <About id="About" />
-      <hr className="m-0 seperator" />
-      <Experience />
-      <hr className="m-0 seperator" />
-      <Work />
-      <hr className="m-0 seperator" />
-      <Education />
-      <hr className="m-0 seperator" />
-      <Skills />
-      <hr className="m-0 seperator" />
-      <Interests />
-      <hr className="m-0 seperator" />
-      <Awards />
-    </div>
-  </>
-)
+export default function Index() {
+  return (
+    <>
+      <Head />
+      <Navbar siteSections={siteSections} />
+      <div className="container-fluid p-0 flex-bg-primary position-relative">
+        {siteSections.map((section, index) => (
+          <div key={section.anchor}>
+            {section.component}
+            {/* don't show the hr on the last section */}
+            {index !== siteSections.length - 1 && (
+              <hr className="m-0 seperator" />
+            )}
+          </div>
+        ))}
+      </div>
+    </>
+  )
+}

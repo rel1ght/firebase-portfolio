@@ -1,6 +1,20 @@
-/* * Start Bootstrap - Resume v5.0.7 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE) */
+:root {
+  --lighter-shade: rgba(0, 0, 0, 0.1);
+
+  --shade: rgba(0, 0, 0, 0.4);
+
+  --darker-shade: rgba(0, 0, 0, 0.5);
+
+  --lighter-tint: rgba(255, 255, 255, 0.1);
+
+  --tint: rgba(255, 255, 255, 0.2);
+
+  --transition-duration-shortest: 150ms;
+  --transition-duration-shorter: 200ms;
+  --transition-duration-short: 250ms;
+  --transition-duration-standard: 300ms;
+  --transition-duration-long: 400ms;
+}
 
 body {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -150,6 +164,10 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item {
     display: block;
   }
+  #sideNav .navbar-collapse .navbar-nav .nav-item:hover {
+    cursor: pointer;
+  }
+
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
@@ -203,6 +221,19 @@ section.resume-section .resume-item .resume-date {
 }
 .green {
   color: #58682d;
+}
+
+.orange-bg {
+  background-color: #bd5d38;
+}
+.gray-bg {
+  background-color: #7d8491;
+}
+.blue-bg {
+  background-color: #41769b;
+}
+.green-bg {
+  background-color: #58682d;
 }
 #hi {
   line-height: 2.5rem !important;
@@ -271,13 +302,15 @@ hr.seperator {
 }
 .workThumbnail {
   box-shadow: 0 5px 5px 1px black;
+  border: transparent 0.2rem solid;
+  border-radius: 0.2rem;
   cursor: pointer;
   filter: grayscale(50%) brightness(80%);
+  box-sizing: content-box;
 }
 
 .workThumbnail:hover {
   filter: none;
-  transform: translateY(0.2rem);
 }
 .workArrow {
   height: 100%;
@@ -318,7 +351,7 @@ hr.seperator {
   border: #bd5d38 0.2rem solid;
   border-radius: 0.2rem;
   filter: none;
-  transform: translateY(0.2rem);
+  /* transform: translateY(0.2rem); */
 }
 .activeThumbnail:hover {
   filter: grayscale(10%) brightness(90%);
@@ -327,4 +360,138 @@ hr.seperator {
 .awssld__content > img {
   border: 0;
   border-radius: 0.2rem;
+}
+
+.btn-group-xs > .btn,
+.btn-xs {
+  padding: 0.25rem 0.4rem;
+  font-size: 0.711rem;
+  line-height: 0.5;
+  border-radius: 0.2rem;
+}
+
+.striped-background::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3) 4px,
+    transparent 4px,
+    transparent 6px
+  );
+  border-radius: 50rem;
+}
+.striped-background {
+  position: relative;
+  box-sizing: content-box;
+}
+.striped-background * {
+  position: relative;
+  z-index: 1;
+}
+.avatar-image {
+  max-width: 20rem;
+}
+.particlesCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.activePointer:hover {
+  cursor: pointer;
+}
+.hoverShadow {
+  transition: filter var(--transition-duration-shortest);
+}
+.hoverShadow:hover {
+  filter: drop-shadow(0px 0.2rem 0.2rem rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+}
+.hoverExtraShadow {
+  transition: filter var(--transition-duration-shortest);
+}
+.hoverExtraShadow:hover {
+  filter: drop-shadow(0px 0.2rem 0.8rem rgba(0, 0, 0, 0.4));
+  box-shadow: inset 0.5rem 0.5rem 0.8rem -0.4rem rgba(255, 239, 169, 0.2) !important;
+  cursor: pointer;
+}
+.hoverLift {
+  transition: transform var(--transition-duration-shortest);
+}
+.hoverLift:hover {
+  transform: translateY(-0.05rem);
+  cursor: pointer;
+}
+
+.clickPressDown {
+  transition: none;
+  transition: transform cubic-bezier(0.4, 0, 0.6, 1)
+    var(--transition-duration-shortest);
+}
+.clickPressDown:active {
+  transform: translateY(0.06rem);
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  /* inset 0px 0px 1rem 0.1rem rgba(255, 255, 255, 0.2) !important; */
+}
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
+.aquainted-button {
+  cursor: pointer;
+  position: relative;
+  display: inline;
+  margin-right: 1rem;
+}
+.aquainted-button > * {
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  right: calc(-1rem + -10px);
+  height: 100%;
+  border: 10px solid transparent;
+  box-sizing: content-box;
+}
+.particles-container {
+  left: -5rem;
+  width: calc(100% + 5rem);
+}
+
+.tooltip {
+  background: #282a36 !important;
+  font-size: 0.7rem;
+  max-width: 20rem;
+  line-height: 1rem;
+  filter: drop-shadow(0px 0.2rem 0.8rem rgba(0, 0, 0, 0.4));
+}
+.slider-contain
+  > .awssld
+  > .awssld__wrapper
+  > .awssld__container
+  > .awssld__box
+  > .awssld__content
+  > img {
+  object-fit: contain;
+}
+.slider-contain
+  > .awssld
+  > .awssld__wrapper
+  > .awssld__container
+  > .awssld__box
+  > .awssld__content {
+  background: transparent;
+}
+.cursor-regular {
+  cursor: default !important;
 }
