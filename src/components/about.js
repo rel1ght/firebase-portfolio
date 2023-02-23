@@ -5,15 +5,22 @@ import Particles from "./particles"
 import calculateAge from "../utils/calculateAge"
 
 const typingStatements = [
-  "a Designer.",
-  "a Developer.",
-  "an Artist.",
-  "a Maker.",
-  "an Eagle Scout.",
-  "an I.T. Innovation Grad.",
-  "from Omaha.",
-  `${calculateAge(5, 3, 1996)} years old.`,
-  "looking for a job.",
+  "a designer",
+  "a developer",
+  "an artist",
+  "a maker",
+  "a team player",
+  "a knot untangler",
+  "an envelope pusher",
+  "a story teller",
+  "a canvas filler",
+  "a box outthinker",
+  "a challenge tackler",
+  "a bar raiser",
+  "a brain stormer",
+  "a curve learner",
+  "a ball roller",
+  // `${calculateAge(5, 3, 1996)} years old`,
 ]
 
 export default function About() {
@@ -49,7 +56,7 @@ export default function About() {
               >
                 {typingStatements.map((statement) => (
                   <span key={statement}>
-                    <h2 className="pauto d-inline orange">{statement}</h2>
+                    <h2 className="pauto d-inline orange">{statement}.</h2>
                     <Typist.Delay ms={4000} />
                     <Typist.Backspace count={statement.length} />
                     <Typist.Delay ms={500} />

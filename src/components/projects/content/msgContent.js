@@ -18,15 +18,13 @@ function msgContent() {
           </div>
         </div>
         <div className="row">
-          <div className="row">
-            <div className="col-12 my-2">
-              <h4 className="orange text-center">
-                See the finished site at{" "}
-                <a href="https://omaha-saki.htilabs.org">
-                  mountainskygoldens.com <FaExternalLinkAlt className=" pl-1" />
-                </a>
-              </h4>
-            </div>
+          <div className="col-12 my-2">
+            <h4 className="orange text-center">
+              See the finished site at{" "}
+              <a href="https://mountainskygoldens.com">
+                mountainskygoldens.com <FaExternalLinkAlt className=" pl-1" />
+              </a>
+            </h4>
           </div>
           <div className="mx-auto mb-2 col-12 col-md-10 slider-contain">
             <AwesomeSlider className="mb-5">
