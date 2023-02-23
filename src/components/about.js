@@ -58,7 +58,8 @@ export default function About() {
                   <span key={statement}>
                     <h2 className="pauto d-inline orange">{statement}.</h2>
                     <Typist.Delay ms={4000} />
-                    <Typist.Backspace count={statement.length} />
+                    {/* +1 to delete period */}
+                    <Typist.Backspace count={statement.length + 1} />
                     <Typist.Delay ms={500} />
                   </span>
                 ))}
