@@ -14,8 +14,7 @@ const typingStatements = [
   "an envelope pusher",
   "a story teller",
   "a canvas filler",
-  "a box outthinker",
-  "a challenge tackler",
+  "a challenge seeker",
   "a bar raiser",
   "a brain stormer",
   "a curve learner",
@@ -83,9 +82,8 @@ export default function About() {
             </a>
           </div>
           <p className="pauto lead mb-5 ">
-            I&apos;m a lot of things, including looking for a job! Feel free to
-            send me a message if you have a question, comment, or just want to
-            chat!
+            I&apos;m a lot of things, including looking for a job! Please send a
+            message if you have a question, comment, or just want to chat.
           </p>
           <div className="social-icons">
             <div className="d-inline-flex flex-column mr-4">
