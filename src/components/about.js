@@ -13,6 +13,7 @@ const typingStatements = [
   "a knot untangler",
   "an envelope pusher",
   "a story teller",
+  "a problem solver",
   "a canvas filler",
   "a challenge seeker",
   "a bar raiser",
