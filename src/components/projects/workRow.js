@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useMediaQuery } from "react-responsive"
+import { AnimatePresence, motion } from "framer-motion"
 import WorkThumb from "./workThumb"
 import WorkContent from "./workContent"
 import FenceContent from "./content/fenceContent"
@@ -99,12 +100,29 @@ function WorkRow() {
             />
           </div>
         </div>
-
-        <div
-          className={`workContentRow row ${contentExpanded ? "" : "d-none"}`}
-        >
-          <WorkContent content={currentContent} />
-        </div>
+        <AnimatePresence>
+          {contentExpanded && (
+            <motion.div
+              key={`workContent`}
+              initial={{ height: 0 }}
+              animate={{ height: "auto" }}
+              exit={{ height: 0, opacity: 0 }}
+            >
+              <div className={`workContentRow row`}>
+                <AnimatePresence>
+                  <motion.div
+                    key={`${activeThumbnail?.src}`}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { delay: 0.2 } }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <WorkContent content={currentContent} />
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </WorkContext.Provider>
     </>
   )

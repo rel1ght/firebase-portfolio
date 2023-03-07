@@ -7,7 +7,6 @@ import { SlArrowUp } from "react-icons/sl"
 import { Link as ScrollLink } from "react-scroll"
 
 function WorkContent({ content }) {
-  console.log("content: ", content)
   const { contextValues } = React.useContext(WorkContext)
   const setActiveThumbnail = contextValues.setActiveThumbnail
   const setContentExpanded = contextValues.setContentExpanded

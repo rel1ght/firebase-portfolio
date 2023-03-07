@@ -4,7 +4,7 @@ import { Tooltip } from "react-tooltip"
 import { FaQuestionCircle } from "react-icons/fa"
 import { skillDict, tags, categories, tagColors } from "../config/skillsList"
 import ClickAwayListener from "react-click-away-listener"
-
+import { motion, AnimatePresence } from "framer-motion"
 export default function Skills() {
   const [enabledCategories, setEnabledCategories] = useState(
     Object.keys(categories).reduce((prevObj, categoryKey) => {
@@ -25,29 +25,44 @@ export default function Skills() {
     }, {})
   )
 
+  const filteredEnabledCategoryKeys = Object.keys(enabledCategories).filter(
+    (enabledCategoryKey) => enabledCategories[enabledCategoryKey]
+  )
+
   return (
     <>
       <section className="resume-section p-3 p-lg-5 d-flex">
         <div className="w-100" id="skills">
           <h2 className="mb-5 text-primary">Skills</h2>
-
           <FilterBar
             enabledTags={enabledTags}
             setEnabledTags={setEnabledTags}
             enabledCategories={enabledCategories}
             setEnabledCategories={setEnabledCategories}
           />
-          {Object.keys(enabledCategories)
-            .filter((categoryKey) => enabledCategories[categoryKey])
-            .map((enabledCategoryKey) => {
-              return (
-                <CategorySection
-                  category={enabledCategoryKey}
-                  key={enabledCategoryKey}
-                  enabledTags={enabledTags}
-                />
-              )
-            })}
+          <AnimatePresence>
+            {filteredEnabledCategoryKeys.map((enabledCategoryKey) => (
+              <motion.div
+                key={`${enabledCategoryKey}_motion_height`}
+                initial={{ height: 0 }}
+                animate={{ height: "auto" }}
+                exit={{ height: 0, transition: { delay: 0.2 } }}
+              >
+                <motion.div
+                  key={`${enabledCategoryKey}_motion_opacity`}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, transition: { delay: 0.2 } }}
+                  exit={{ opacity: 0 }}
+                >
+                  <CategorySection
+                    category={enabledCategoryKey}
+                    key={enabledCategoryKey}
+                    enabledTags={enabledTags}
+                  />
+                </motion.div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </section>
     </>
@@ -181,17 +196,41 @@ function CategorySection({ category, enabledTags }) {
           return 0
         }
       })
-    console.log("filtereSortedTest: ", filtereSortedTest)
     return filtereSortedTest
   }, [category, filteredTags])
 
   return (
-    <div className="w-100 my-5">
+    <div className="w-100 pt-5">
       <h3 className="text-uppercase">{category}</h3>
       <div className="d-flex flex-wrap ml-n2">
-        {filteredCategorySkillKeys.map((skillKey) => {
-          return <Skill key={skillKey} skillKey={skillKey} />
-        })}
+        <AnimatePresence initial={false}>
+          {filteredCategorySkillKeys.map((skillKey, index) => {
+            return (
+              <motion.div
+                key={`${skillKey}_motion_width`}
+                initial={{ width: 0 }}
+                animate={{ width: "auto" }}
+                exit={{ width: 0 }}
+                transition={{
+                  // length - index = reverse position
+                  // * stagger effect = cumulative delay
+                  delay: (filteredCategorySkillKeys.length - index) * 0.05,
+                }}
+              >
+                <div
+                  style={{
+                    textOverflow: "",
+                    overflow: "hidden",
+                    whiteSpace: "nowrap",
+                    wordWrap: "break-word",
+                  }}
+                >
+                  <Skill key={skillKey} skillKey={skillKey} />
+                </div>
+              </motion.div>
+            )
+          })}
+        </AnimatePresence>
       </div>
     </div>
   )
