@@ -10,9 +10,9 @@ export default function Education() {
           <div className="mb-5">
             <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
               <div className="resume-content">
-                <h3 className="mb-0 orange">University of Nebraska at Omaha</h3>
-                <div className="mb-1">
-                  <div className="subheading green">
+                <h3 className="mb-2 orange">University of Nebraska at Omaha</h3>
+                <div>
+                  <div className="subheading green mb-n1">
                     Bachelor of Science in IT Innovation
                   </div>
                   <div>
@@ -24,7 +24,7 @@ export default function Education() {
                 <span className="blue">August 2017 - May 2020</span>
               </div>
             </div>
-            <div className="mt-2">
+            <div className="mt-1">
               <p>
                 IT Innovation is a unique degree that combines product design,
                 entrepreneurship, computer science, and a personal focus. My
@@ -37,9 +37,11 @@ export default function Education() {
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
-              <h3 className="mb-0 orange">Utah Valley University</h3>
+              <h3 className="mb-2 orange">Utah Valley University</h3>
               <div className="mb-3">
-                <div className="subheading green">Bachelor of Fine Arts</div>
+                <div className="subheading green mb-n1">
+                  Bachelor of Fine Arts
+                </div>
                 <div>
                   <p className="green">Emphasis Graphic Design</p>
                 </div>
