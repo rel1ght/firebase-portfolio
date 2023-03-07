@@ -180,16 +180,16 @@ section.resume-section {
 }
 
 section.resume-section .resume-item .resume-date {
-  min-width: none;
+  min-width: 0;
 }
 
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
-  section.resume-section .resume-item .resume-date {
+  /* section.resume-section .resume-item .resume-date {
     min-width: 18rem;
-  }
+  } */
 }
 
 @media (min-width: 992px) {
@@ -283,9 +283,12 @@ hr.seperator {
 }
 
 #mobileonlyextraspace {
-  height: 115px;
+  height: 125px;
 }
 
+.typeStatement {
+  line-height: 1em !important;
+}
 .is-current > * {
   color: white !important;
 }

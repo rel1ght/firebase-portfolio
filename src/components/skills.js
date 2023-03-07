@@ -78,7 +78,7 @@ function FilterBar({
   return (
     <div className="w-100 mt-n5">
       <div className="row">
-        <div className="col-12 col-lg-auto">
+        <div className="col-12 col-lg-auto pt-1">
           <h5>Categories</h5>
           <div className="ml-n1">
             {Object.keys(enabledCategories).map((categoryKey) => {
@@ -94,7 +94,7 @@ function FilterBar({
             })}
           </div>
         </div>
-        <div className="col-12 col-lg-auto">
+        <div className="col-12 col-lg-auto pt-1">
           <h5>Type</h5>
           <div className="ml-n1">
             {Object.keys(enabledTags).map((tagKey) => {

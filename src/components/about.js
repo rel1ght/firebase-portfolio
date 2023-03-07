@@ -45,8 +45,10 @@ export default function About() {
             <h2 className="pauto mb-2 d-block d-lg-inline text-primary display-3">
               Tyler Manion
             </h2>
-            <div>
-              <h2 className="pauto mb-2 d-inline">and I&apos;m&nbsp;</h2>
+            <div className="typeStatement">
+              <h2 className="pauto mb-2 d-inline typeStatement">
+                and I&apos;m&nbsp;
+              </h2>
               <Typist
                 loop
                 typingDelay={() => Math.max(Math.random() * 150, 40)}
@@ -56,7 +58,9 @@ export default function About() {
               >
                 {typingStatements.map((statement) => (
                   <span key={statement}>
-                    <h2 className="pauto d-inline orange">{statement}.</h2>
+                    <h2 className="pauto d-inline orange typeStatement">
+                      {statement}.
+                    </h2>
                     <Typist.Delay ms={4000} />
                     {/* +1 to delete period */}
                     <Typist.Backspace count={statement.length + 1} />

@@ -9,8 +9,18 @@ export default function Education() {
           <h2 className="mb-5 text-primary">Education</h2>
           <div className="mb-5">
             <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
-              <div className="resume-content">
-                <h3 className="mb-2 orange">University of Nebraska at Omaha</h3>
+              <div className="w-100">
+                <div className="mb-2 d-flex justify-content-between flex-column-reverse flex-xl-row align-items-xl-center">
+                  <h3
+                    className="orange mt-1 mt-xl-0"
+                    style={{ flex: "1 0 auto" }}
+                  >
+                    University of Nebraska at Omaha
+                  </h3>
+                  <div className="resume-date" style={{ flexShrink: 1 }}>
+                    <span className="blue">August 2017 - May 2020</span>
+                  </div>
+                </div>
                 <div>
                   <div className="subheading green mb-n1">
                     Bachelor of Science in IT Innovation
@@ -19,9 +29,6 @@ export default function Education() {
                     <p className="green">Emphasis Graphic and UX Design</p>
                   </div>
                 </div>
-              </div>
-              <div className="resume-date text-md-right">
-                <span className="blue">August 2017 - May 2020</span>
               </div>
             </div>
             <div className="mt-1">
@@ -36,8 +43,18 @@ export default function Education() {
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
-            <div className="resume-content">
-              <h3 className="mb-2 orange">Utah Valley University</h3>
+            <div className="w-100">
+              <div className="mb-2 d-flex justify-content-between flex-column-reverse flex-xl-row align-items-xl-center">
+                <h3
+                  className="mb-2 orange  mt-1 mt-xl-0"
+                  style={{ flex: "1 0 auto" }}
+                >
+                  Utah Valley University
+                </h3>
+                <div className="resume-date" style={{ flexShrink: 1 }}>
+                  <span className="blue">August 2014 - December 2015</span>
+                </div>
+              </div>
               <div className="mb-3">
                 <div className="subheading green mb-n1">
                   Bachelor of Fine Arts
@@ -46,9 +63,6 @@ export default function Education() {
                   <p className="green">Emphasis Graphic Design</p>
                 </div>
               </div>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="blue">August 2014 - December 2015</span>
             </div>
           </div>
         </div>

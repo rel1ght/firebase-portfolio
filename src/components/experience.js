@@ -55,19 +55,25 @@ function ExperienceItem({
 }) {
   return (
     <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-      <div className="resume-content">
-        <h3 className="mb-0 orange">{positionName}</h3>
+      <div className="w-100">
+        <div className="d-flex justify-content-between flex-column-reverse flex-xl-row align-items-xl-center">
+          <h3 className="mb-0 mt-1 orange" style={{ flex: "1 0 auto" }}>
+            {positionName}
+          </h3>
+          <div className="resume-date " style={{ flexShrink: 1 }}>
+            <span className="blue">
+              {startDate} - {endDate}
+            </span>
+          </div>
+        </div>
         <div className="subheading mb-3 green">{employerName}</div>
         <ul>
           {bulletPoints.map((bulletPoint) => (
-            <li key={JSON.stringify(bulletPoint)}>{bulletPoint}</li>
+            <li className="pb-3" key={JSON.stringify(bulletPoint)}>
+              {bulletPoint}
+            </li>
           ))}
         </ul>
-      </div>
-      <div className="resume-date text-md-right">
-        <span className="blue">
-          {startDate} - {endDate}
-        </span>
       </div>
     </div>
   )
