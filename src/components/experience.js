@@ -11,7 +11,7 @@ const collegeOfEdExperience = {
     "Researched experimental applications of virtual reality used in learning environments",
     "Designed web and print graphics for college-wide communications",
     "Wrote programs to automate repetitive tasks and reduce human error",
-    "Engineered and deployed servers used in highly connected operation critical enviornments",
+    "Engineered and deployed servers used in highly connected operation critical environments",
   ],
 }
 
