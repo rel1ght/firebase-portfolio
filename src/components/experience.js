@@ -32,12 +32,29 @@ const htiLabsExperience = {
     "Squashed bugs and solved issues with creativity and perseverance while adhering to an aggressive timeline",
   ],
 }
+
+const biberkExperience = {
+  startDate: "May 2023",
+  endDate: "Current",
+  positionName: "UX Designer",
+  employerName: "biBERK",
+  bulletPoints: [
+    "Designed and implemented user flows, wireframes, and proof of concepts that have a business impact",
+    "Created the visual design definition, direction, and consistency of applications for multiple display devices",
+    "Collaborated with stakeholders, product, and vendors to create visual presentations for product roadmap initiatives",
+    "Worked closely with frontend developers and architects to help implement designs as needed",
+    "Maintained a pulse on user experience through site analytics, session replays, A/B testing, and user testing",
+    "Purposed solutions for user pain points to increase user engagement throughout the application and company websites",
+  ],
+}
+
 export default function Experience() {
   return (
     <>
       <section className="resume-section p-3 p-lg-5 d-flex justify-content-center flex-bg-primary">
         <div id="experience" className="w-100">
           <h2 className="mb-5 text-primary">Experience</h2>
+          <ExperienceItem {...biberkExperience} />
           <ExperienceItem {...htiLabsExperience} />
           <ExperienceItem {...collegeOfEdExperience} />
         </div>
