@@ -37,7 +37,7 @@ const biberkExperience = {
   startDate: "May 2023",
   endDate: "Current",
   positionName: "UX Designer",
-  employerName: "biBERK",
+  employerName: "biBerk",
   bulletPoints: [
     "Designed and implemented user flows, wireframes, and proof of concepts that have a business impact",
     "Created the visual design definition, direction, and consistency of applications for multiple display devices",
@@ -45,6 +45,12 @@ const biberkExperience = {
     "Worked closely with frontend developers and architects to help implement designs as needed",
     "Maintained a pulse on user experience through site analytics, session replays, A/B testing, and user testing",
     "Purposed solutions for user pain points to increase user engagement throughout the application and company websites",
+    "Led the development of a cross-framework design system spanning 100+ components used in 6 enterprise web apps, improving consistency and reducing duplicated UI logic across 90+ engineers",
+    "Reduced design-to-development turnaround by 40% through a Figma-to-code token system and streamlined handoff workflows",
+    "Cut frontend bundle size by 85% through tree-shaking, code-splitting, and custom build tooling",
+    "Improved build pipeline speed 15× by implementing custom CI/CD pipelines and caching strategies",
+    "Conducted user interviews, created journey maps, and prototyped new billing tools, reducing task time for 600+ monthly users and increasing satisfaction scores",
+    "Designed the company’s new logomark as well as other designs during a brand refresh",
   ],
 }
 
