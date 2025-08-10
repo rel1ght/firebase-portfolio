@@ -40,7 +40,7 @@ import {
   SiFirebase,
   SiIonic,
   SiJest,
-  SiMaterialui,
+  SiMui,
   SiNextdotjs,
   SiProtodotio,
   SiRedux,
@@ -206,7 +206,7 @@ export const skillDict = {
     tags: [tags.tool],
   },
   mui: {
-    icon: <SiMaterialui />,
+    icon: <SiMui />,
     title: "Material UI",
     description: "",
     category: categories.development,
